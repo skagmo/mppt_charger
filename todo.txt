@@ -1,0 +1,29 @@
+ - HW: Lodde på enda en shunt i parallell (10mohm/2) (4A maks: 4A * 0.005 * 100k / 1k = 2V)
+ - FW: UART ringbuffer spytter ut en runde med 0x00 under oppstart
+
+Målt 21.5 Wp med 20 W panel!
+
+Artikkel:
+ - Introduction: Plogen, generell interesse
+ - The problem vise graf
+ - Design      Skjema, utlegg, kode
+ - Results
+ - Files: link til github
+
+Ratings:
+ - PV: 25 V max (caps), 30 V max (FET)
+ - Bat: 17 V max når header står i BAT
+ - Current: 1 mA per spenningsdeler, xx mA per INA139, ca. 24 mA på uC
+ - Ripple: 2A 2V 50 mV rippel ut, 12V in
+
+$14952,1282,12802,1477,44,113 19.2w inn, 18.9w ut
+$14958,1260,12785,1451,41,113
+
+Transistorer:
+ Vishay:
+  http://www.vishay.com/mosfets/so-8-package/
+ Fairchild:
+  FDS6681Z
+  FDS6679: -13A, 9mohm, -25 Vgs, -30Vds 
+  FDS86140: 11.2A, 9.8 mohm,
+  LFPAK?

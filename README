@@ -1,0 +1,10 @@
+MPPT charger
+Jon Petter Skagmo, 2014
+http://www.skagmo.com
+
+The repository contains the following folders:
+ - firmware:      MPLAB X project for the PIC microcontroller
+ - datasheet:     Datasheets for (some) components on the PCB
+ - pcb:           Eagle schematic and board
+ - documentation: Relevant images/documentation
+ - other:         Inspiration from others, articles, relevant material
