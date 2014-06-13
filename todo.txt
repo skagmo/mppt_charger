@@ -3,13 +3,6 @@
 
 Målt 21.5 Wp med 20 W panel!
 
-Artikkel:
- - Introduction: Plogen, generell interesse
- - The problem vise graf
- - Design      Skjema, utlegg, kode
- - Results
- - Files: link til github
-
 Ratings:
  - PV: 25 V max (caps), 30 V max (FET)
  - Bat: 17 V max når header står i BAT

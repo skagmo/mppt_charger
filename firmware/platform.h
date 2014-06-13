@@ -2,7 +2,17 @@
 #define	PLATFORM_H
 
 #define _XTAL_FREQ 16000000
-//#define STATUS_LED
+
+// Digital pin definitions
+#define PIC_BUCK_HI			LATCbits.LATC5
+#define PIC_BUCK_LO			LATCbits.LATC4
+
+// Analog pin definitions
+#define AD_PV_I			5
+#define AD_BAT_IN_I		6
+#define AD_PV_V			7
+#define AD_BAT_V		8
+#define AD_BAT_OUT_I	9
 
 #pragma config FOSC = IRC       // Oscillator Selection bits (Internal RC oscillator)
 #pragma config PLLEN = OFF      // 4 X PLL Enable bit (PLL is under software control)

@@ -1,95 +1,11 @@
 Version 3.2 HI-TECH Software Intermediate Code
-"5221 C:\Program Files (x86)\Microchip\xc8\v1.31\include\pic18lf13k22.h
-[v _PR2 `Vuc ~T0 @X0 0 e@4043 ]
-[s S275 :2 `uc 1 :1 `uc 1 :4 `uc 1 ]
-[n S275 . T2CKPS TMR2ON T2OUTPS ]
-[s S276 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S276 . T2CKPS0 T2CKPS1 . T2OUTPS0 T2OUTPS1 T2OUTPS2 T2OUTPS3 ]
-[u S274 `S275 1 `S276 1 ]
-[n S274 . . . ]
-"5172
-[v _T2CONbits `VS274 ~T0 @X0 0 e@4042 ]
-[s S234 :4 `uc 1 :2 `uc 1 :2 `uc 1 ]
-[n S234 . CCP1M DC1B P1M ]
-[s S235 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S235 . CCP1M0 CCP1M1 CCP1M2 CCP1M3 DC1B0 DC1B1 P1M0 P1M1 ]
-[u S233 `S234 1 `S235 1 ]
-[n S233 . . . ]
-"4435
-[v _CCP1CONbits `VS233 ~T0 @X0 0 e@4029 ]
-"3827
-[v _PWM1CON `Vuc ~T0 @X0 0 e@4023 ]
-[s S98 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S98 . LATC0 LATC1 LATC2 LATC3 LATC4 LATC5 LATC6 LATC7 ]
-[s S99 :1 `uc 1 ]
-[n S99 . LC0 ]
-[s S100 :1 `uc 1 :1 `uc 1 ]
-[n S100 . . LC1 ]
-[s S101 :2 `uc 1 :1 `uc 1 ]
-[n S101 . . LC2 ]
-[s S102 :3 `uc 1 :1 `uc 1 ]
-[n S102 . . LC3 ]
-[s S103 :4 `uc 1 :1 `uc 1 ]
-[n S103 . . LC4 ]
-[s S104 :5 `uc 1 :1 `uc 1 ]
-[n S104 . . LC5 ]
-[s S105 :6 `uc 1 :1 `uc 1 ]
-[n S105 . . LC6 ]
-[s S106 :7 `uc 1 :1 `uc 1 ]
-[n S106 . . LC7 ]
-[u S97 `S98 1 `S99 1 `S100 1 `S101 1 `S102 1 `S103 1 `S104 1 `S105 1 `S106 1 ]
-[n S97 . . . . . . . . . . ]
-"1882
-[v _LATCbits `VS97 ~T0 @X0 0 e@3979 ]
-"4500
-[v _CCPR1L `Vuc ~T0 @X0 0 e@4030 ]
-"753
-[v _ANSEL `Vuc ~T0 @X0 0 e@3966 ]
-"872
-[v _ANSELH `Vuc ~T0 @X0 0 e@3967 ]
-[s S240 :2 `uc 1 :2 `uc 1 ]
-[n S240 . NVCFG PVCFG ]
-[s S241 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S241 . NVCFG0 NVCFG1 PVCFG0 PVCFG1 ]
-[s S242 :3 `uc 1 :1 `uc 1 ]
-[n S242 . . CHSN3 ]
-[u S239 `S240 1 `S241 1 `S242 1 ]
-[n S239 . . . . ]
-"4603
-[v _ADCON1bits `VS239 ~T0 @X0 0 e@4033 ]
-"4512
-[v _ADCON2 `Vuc ~T0 @X0 0 e@4032 ]
-"4104
-[v _VREFCON0 `Vuc ~T0 @X0 0 e@4026 ]
-[s S244 :1 `uc 1 :1 `uc 1 ]
-[n S244 . . GO_NOT_DONE ]
-[s S245 :1 `uc 1 :1 `uc 1 :4 `uc 1 ]
-[n S245 . ADON GO_nDONE CHS ]
-[s S246 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S246 . . DONE CHS0 CHS1 CHS2 CHS3 ]
-[s S247 :1 `uc 1 :1 `uc 1 ]
-[n S247 . . NOT_DONE ]
-[s S248 :1 `uc 1 :1 `uc 1 ]
-[n S248 . . nDONE ]
-[s S249 :1 `uc 1 :1 `uc 1 ]
-[n S249 . . GO_DONE ]
-[s S250 :1 `uc 1 :1 `uc 1 ]
-[n S250 . . GO ]
-[s S251 :1 `uc 1 :1 `uc 1 ]
-[n S251 . . GODONE ]
-[u S243 `S244 1 `S245 1 `S246 1 `S247 1 `S248 1 `S249 1 `S250 1 `S251 1 ]
-[n S243 . . . . . . . . . ]
-"4686
-[v _ADCON0bits `VS243 ~T0 @X0 0 e@4034 ]
-"4642
-[v _ADCON0 `Vuc ~T0 @X0 0 e@4034 ]
-"4772
-[v _ADRESH `Vuc ~T0 @X0 0 e@4036 ]
-"4766
-[v _ADRESL `Vuc ~T0 @X0 0 e@4035 ]
 [p mainexit ]
-"20 platform.h
+"30 platform.h
 [v _general_init `(v ~T0 @X0 0 ef ]
+"7 perf.h
+[v _pwm_deinit `(v ~T0 @X0 0 ef ]
+"9
+[v _ad_init `(v ~T0 @X0 0 ef ]
 "19 uart.h
 [v _uart_init `(v ~T0 @X0 0 ef1`ul ]
 [v F3859 `(v ~T0 @X0 1 tf1`ul ]
@@ -110,11 +26,17 @@ Version 3.2 HI-TECH Software Intermediate Code
 [n S329 . . . . . . ]
 "6292 C:\Program Files (x86)\Microchip\xc8\v1.31\include\pic18lf13k22.h
 [v _INTCONbits `VS329 ~T0 @X0 0 e@4082 ]
+"8 perf.h
+[v _pwm_set `(v ~T0 @X0 0 ef1`uc ]
+"6
+[v _pwm_init `(v ~T0 @X0 0 ef ]
 "21 uart.h
 [v _uart_get `(uc ~T0 @X0 0 ef ]
 "20
 [v _uart_inwaiting `(uc ~T0 @X0 0 ef ]
-"23
+"10 perf.h
+[v _ad_read `(i ~T0 @X0 0 ef1`uc ]
+"23 uart.h
 [v _uart_puts `(v ~T0 @X0 0 ef1`*Cuc ]
 "28
 [v _uart_put_int `(v ~T0 @X0 0 ef1`l ]
@@ -3712,36 +3634,31 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;string.h: 57: extern char * strichr(const char *, int);
 [; ;string.h: 58: extern char * strrchr(const char *, int);
 [; ;string.h: 59: extern char * strrichr(const char *, int);
-[; ;settings.h: 6: typedef struct{
-[; ;settings.h: 7: uint32_t chg_vmax;
-[; ;settings.h: 8: }main_set_t;
-[; ;settings.h: 10: extern main_set_t main_set;
-[; ;settings.h: 12: void set_defaults(main_set_t* s);
-"7 platform.h
+"17 platform.h
 [p x FOSC=IRC ]
-"8
-[p x PLLEN=OFF ]
-"9
-[p x PCLKEN=ON ]
-"10
-[p x FCMEN=OFF ]
-"11
-[p x IESO=OFF ]
-"12
-[p x BOREN=SBORDIS ]
-"13
-[p x BORV=19 ]
-"14
-[p x WDTEN=OFF ]
-"15
-[p x WDTPS=32 ]
-"16
-[p x HFOFST=OFF ]
-"17
-[p x MCLRE=OFF ]
 "18
+[p x PLLEN=OFF ]
+"19
+[p x PCLKEN=ON ]
+"20
+[p x FCMEN=OFF ]
+"21
+[p x IESO=OFF ]
+"22
+[p x BOREN=SBORDIS ]
+"23
+[p x BORV=19 ]
+"24
+[p x WDTEN=OFF ]
+"25
+[p x WDTPS=32 ]
+"26
+[p x HFOFST=OFF ]
+"27
+[p x MCLRE=OFF ]
+"28
 [p x LVP=OFF ]
-[; ;platform.h: 20: void general_init();
+[; ;platform.h: 30: void general_init();
 [; ;uart.h: 19: void uart_init(unsigned long baud);
 [; ;uart.h: 20: char uart_inwaiting(void);
 [; ;uart.h: 21: char uart_get(void);
@@ -3750,525 +3667,417 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;uart.h: 25: void uart_put_block(char c);
 [; ;uart.h: 26: void uart_puts_block(const char *s);
 [; ;uart.h: 28: void uart_put_int(int32_t n);
-"32 main.c
-[v _pwm_init `(v ~T0 @X0 1 ef ]
-{
-[; ;main.c: 32: void pwm_init(void){
-[e :U _pwm_init ]
-[f ]
-[; ;main.c: 34: PR2 = 31;
-"34
-[e = _PR2 -> -> 31 `i `uc ]
-[; ;main.c: 35: T2CONbits.T2OUTPS = 0;
-"35
-[e = . . _T2CONbits 0 2 -> -> 0 `i `uc ]
-[; ;main.c: 36: T2CONbits.T2CKPS = 0;
-"36
-[e = . . _T2CONbits 0 0 -> -> 0 `i `uc ]
-[; ;main.c: 37: T2CONbits.TMR2ON = 1;
-"37
-[e = . . _T2CONbits 0 1 -> -> 1 `i `uc ]
-[; ;main.c: 40: CCP1CONbits.CCP1M = 0b1100;
-"40
-[e = . . _CCP1CONbits 0 0 -> -> 12 `i `uc ]
-[; ;main.c: 41: CCP1CONbits.P1M = 0b10;
-"41
-[e = . . _CCP1CONbits 0 2 -> -> 2 `i `uc ]
-[; ;main.c: 44: PWM1CON = 1;
-"44
-[e = _PWM1CON -> -> 1 `i `uc ]
-[; ;main.c: 45: }
-"45
-[e :UE 375 ]
-}
-"47
-[v _pwm_deinit `(v ~T0 @X0 1 ef ]
-{
-[; ;main.c: 47: void pwm_deinit(void){
-[e :U _pwm_deinit ]
-[f ]
-[; ;main.c: 48: CCP1CONbits.CCP1M = 0;
-"48
-[e = . . _CCP1CONbits 0 0 -> -> 0 `i `uc ]
-[; ;main.c: 49: LATCbits.LATC5 = LATCbits.LATC4 = 0;
-"49
-[e = . . _LATCbits 0 5 = . . _LATCbits 0 4 -> -> 0 `i `uc ]
-[; ;main.c: 50: }
-"50
-[e :UE 376 ]
-}
-"52
-[v _pwm_set `(v ~T0 @X0 1 ef1`uc ]
-{
-[; ;main.c: 52: void pwm_set(uint8_t level){
-[e :U _pwm_set ]
-[v _level `uc ~T0 @X0 1 r1 ]
-[f ]
-[; ;main.c: 53: CCPR1L = (level >> 2);
-"53
-[e = _CCPR1L -> >> -> _level `i -> 2 `i `uc ]
-[; ;main.c: 54: CCP1CONbits.DC1B = level & 0b11;
-"54
-[e = . . _CCP1CONbits 0 1 -> & -> _level `i -> 3 `i `uc ]
-[; ;main.c: 55: }
-"55
-[e :UE 377 ]
-}
-"57
-[v _ad_init `(v ~T0 @X0 1 ef ]
-{
-[; ;main.c: 57: void ad_init(void){
-[e :U _ad_init ]
-[f ]
-[; ;main.c: 59: ANSEL = 0b11100000;
-"59
-[e = _ANSEL -> -> 224 `i `uc ]
-[; ;main.c: 60: ANSELH = 0b00000011;
-"60
-[e = _ANSELH -> -> 3 `i `uc ]
-[; ;main.c: 61: ADCON1bits.PVCFG = 0b10;
-"61
-[e = . . _ADCON1bits 0 1 -> -> 2 `i `uc ]
-[; ;main.c: 62: ADCON1bits.NVCFG = 0;
-"62
-[e = . . _ADCON1bits 0 0 -> -> 0 `i `uc ]
-[; ;main.c: 63: ADCON2 = 0b10101110;
-"63
-[e = _ADCON2 -> -> 174 `i `uc ]
-[; ;main.c: 66: VREFCON0 = 0b10100000;
-"66
-[e = _VREFCON0 -> -> 160 `i `uc ]
-[; ;main.c: 67: ADCON0bits.ADON = 1;
-"67
-[e = . . _ADCON0bits 1 0 -> -> 1 `i `uc ]
-[; ;main.c: 68: }
-"68
-[e :UE 378 ]
-}
-"70
-[v _ad_read `(i ~T0 @X0 1 ef1`uc ]
-{
-[; ;main.c: 70: int ad_read(char channel){
-[e :U _ad_read ]
-[v _channel `uc ~T0 @X0 1 r1 ]
-[f ]
-[; ;main.c: 71: ADCON0 = (channel<<2) | 0b11;
-"71
-[e = _ADCON0 -> | << -> _channel `i -> 2 `i -> 3 `i `uc ]
-[; ;main.c: 72: while (ADCON0&0b10);
-"72
-[e $U 380  ]
-[e :U 381 ]
-[e :U 380 ]
-[e $ != & -> _ADCON0 `i -> 2 `i -> 0 `i 381  ]
-[e :U 382 ]
-[; ;main.c: 73: return ((ADRESH<<8) + ADRESL);
-"73
-[e ) + << -> _ADRESH `i -> 8 `i -> _ADRESL `i ]
-[e $UE 379  ]
-[; ;main.c: 74: }
-"74
-[e :UE 379 ]
-}
-"76
+[; ;perf.h: 6: void pwm_init(void);
+[; ;perf.h: 7: void pwm_deinit(void);
+[; ;perf.h: 8: void pwm_set(uint8_t level);
+[; ;perf.h: 9: void ad_init(void);
+[; ;perf.h: 10: int ad_read(char channel);
+"22 main.c
 [v _main `(i ~T0 @X0 1 ef2`i`**uc ]
 {
-[; ;main.c: 76: int main(int argc, char** argv) {
+[; ;main.c: 22: int main(int argc, char** argv) {
 [e :U _main ]
 [v _argc `i ~T0 @X0 1 r1 ]
 [v _argv `**uc ~T0 @X0 1 r2 ]
 [f ]
-[; ;main.c: 77: general_init();
-"77
+[; ;main.c: 24: general_init();
+"24
 [e ( _general_init ..  ]
-[; ;main.c: 78: pwm_deinit();
-"78
+[; ;main.c: 25: pwm_deinit();
+"25
 [e ( _pwm_deinit ..  ]
-[; ;main.c: 79: ad_init();
-"79
+[; ;main.c: 26: ad_init();
+"26
 [e ( _ad_init ..  ]
-[; ;main.c: 80: uart_init(38400);
-"80
+[; ;main.c: 27: uart_init(38400);
+"27
 [e ( _uart_init (1 -> -> 38400 `l `ul ]
-[; ;main.c: 81: _delay((unsigned long)((20)*(16000000/4000.0)));
-"81
+[; ;main.c: 28: _delay((unsigned long)((20)*(16000000/4000.0)));
+"28
 [e ( __delay (1 -> * -> -> 20 `i `d / -> -> 16000000 `l `d .4000.0 `ul ]
-"83
+[; ;main.c: 31: INTCONbits.PEIE = 1;
+"31
+[e = . . _INTCONbits 1 6 -> -> 1 `i `uc ]
+[; ;main.c: 32: INTCONbits.GIE = 1;
+"32
+[e = . . _INTCONbits 1 7 -> -> 1 `i `uc ]
+"34
 [v _mppt_state `uc ~T0 @X0 1 a ]
-[; ;main.c: 83: uint8_t mppt_state = 0;
+[; ;main.c: 34: uint8_t mppt_state = 0;
 [e = _mppt_state -> -> 0 `i `uc ]
-"84
+"35
 [v _duty_cycle `uc ~T0 @X0 1 a ]
-"85
+[; ;main.c: 35: uint8_t duty_cycle = 120;
+[e = _duty_cycle -> -> 120 `i `uc ]
+"36
 [v _pv_v `ui ~T0 @X0 1 a ]
 [v _pv_i `ui ~T0 @X0 1 a ]
 [v _bat_v `ui ~T0 @X0 1 a ]
 [v _bat_i_in `ui ~T0 @X0 1 a ]
 [v _bat_i_out `ui ~T0 @X0 1 a ]
 [v _bat_v_old `ui ~T0 @X0 1 a ]
-[; ;main.c: 84: uint8_t duty_cycle;
-[; ;main.c: 85: uint16_t pv_v, pv_i, bat_v, bat_i_in, bat_i_out, bat_v_old;
-[; ;main.c: 87: INTCONbits.PEIE = 1;
-"87
-[e = . . _INTCONbits 1 6 -> -> 1 `i `uc ]
-[; ;main.c: 88: INTCONbits.GIE = 1;
-"88
-[e = . . _INTCONbits 1 7 -> -> 1 `i `uc ]
-[; ;main.c: 90: while(1){
-"90
-[e :U 385 ]
+[; ;main.c: 36: uint16_t pv_v, pv_i, bat_v, bat_i_in, bat_i_out, bat_v_old;
+[; ;main.c: 39: while(1){
+"39
+[e :U 376 ]
 {
-[; ;main.c: 91: while (uart_inwaiting()){
-"91
-[e $U 387  ]
-[e :U 388 ]
+[; ;main.c: 42: while (uart_inwaiting()){
+"42
+[e $U 378  ]
+[e :U 379 ]
 {
-[; ;main.c: 92: switch (uart_get()){
-"92
-[e $U 391  ]
+[; ;main.c: 43: switch (uart_get()){
+"43
+[e $U 382  ]
 {
-[; ;main.c: 93: case 'u':
-"93
-[e :U 392 ]
-[; ;main.c: 94: if (duty_cycle<120){
-"94
-[e $ ! < -> _duty_cycle `i -> 120 `i 393  ]
+[; ;main.c: 44: case 'u':
+"44
+[e :U 383 ]
+[; ;main.c: 45: if (duty_cycle<120){
+"45
+[e $ ! < -> _duty_cycle `i -> 120 `i 384  ]
 {
-[; ;main.c: 95: duty_cycle++;
-"95
+[; ;main.c: 46: duty_cycle++;
+"46
 [e ++ _duty_cycle -> -> 1 `i `uc ]
-[; ;main.c: 96: pwm_set(duty_cycle);
-"96
+[; ;main.c: 47: pwm_set(duty_cycle);
+"47
 [e ( _pwm_set (1 _duty_cycle ]
-"97
+"48
 }
-[e :U 393 ]
-[; ;main.c: 97: }
-[; ;main.c: 98: break;
-"98
-[e $U 390  ]
-[; ;main.c: 99: case 'd':
-"99
-[e :U 394 ]
-[; ;main.c: 100: if (duty_cycle>40){
-"100
-[e $ ! > -> _duty_cycle `i -> 40 `i 395  ]
+[e :U 384 ]
+[; ;main.c: 48: }
+[; ;main.c: 49: break;
+"49
+[e $U 381  ]
+[; ;main.c: 50: case 'd':
+"50
+[e :U 385 ]
+[; ;main.c: 51: if (duty_cycle>40){
+"51
+[e $ ! > -> _duty_cycle `i -> 40 `i 386  ]
 {
-[; ;main.c: 101: duty_cycle--;
-"101
+[; ;main.c: 52: duty_cycle--;
+"52
 [e -- _duty_cycle -> -> 1 `i `uc ]
-[; ;main.c: 102: pwm_set(duty_cycle);
-"102
+[; ;main.c: 53: pwm_set(duty_cycle);
+"53
 [e ( _pwm_set (1 _duty_cycle ]
-"103
+"54
 }
-[e :U 395 ]
-[; ;main.c: 103: }
-[; ;main.c: 104: break;
-"104
+[e :U 386 ]
+[; ;main.c: 54: }
+[; ;main.c: 55: break;
+"55
+[e $U 381  ]
+[; ;main.c: 56: case 'o':
+"56
+[e :U 387 ]
+[; ;main.c: 57: pwm_deinit();
+"57
+[e ( _pwm_deinit ..  ]
+[; ;main.c: 58: break;
+"58
+[e $U 381  ]
+[; ;main.c: 59: case 'p':
+"59
+[e :U 388 ]
+[; ;main.c: 60: pwm_init();
+"60
+[e ( _pwm_init ..  ]
+[; ;main.c: 61: break;
+"61
+[e $U 381  ]
+"63
+}
+[; ;main.c: 63: }
+[e $U 381  ]
+"43
+[e :U 382 ]
+[e [\ ( _uart_get ..  , $ -> -> 117 `ui `uc 383
+ , $ -> -> 100 `ui `uc 385
+ , $ -> -> 111 `ui `uc 387
+ , $ -> -> 112 `ui `uc 388
+ 381 ]
+"63
+[e :U 381 ]
+"64
+}
+[e :U 378 ]
+"42
+[e $ != -> ( _uart_inwaiting ..  `i -> -> -> 0 `i `uc `i 379  ]
+[e :U 380 ]
+[; ;main.c: 64: }
+[; ;main.c: 67: pv_v = (uint32_t)ad_read(7) * 21790 / 1000;
+"67
+[e = _pv_v -> / * -> ( _ad_read (1 -> -> 7 `i `uc `ul -> -> -> 21790 `i `l `ul -> -> -> 1000 `i `l `ul `ui ]
+[; ;main.c: 68: pv_i = (uint32_t)ad_read(5) * 2;
+"68
+[e = _pv_i -> * -> ( _ad_read (1 -> -> 5 `i `uc `ul -> -> -> 2 `i `l `ul `ui ]
+[; ;main.c: 69: bat_v = (uint32_t)ad_read(8) * 21904 / 1000;
+"69
+[e = _bat_v -> / * -> ( _ad_read (1 -> -> 8 `i `uc `ul -> -> -> 21904 `i `l `ul -> -> -> 1000 `i `l `ul `ui ]
+[; ;main.c: 70: bat_i_in = (uint32_t)ad_read(6) * 2;
+"70
+[e = _bat_i_in -> * -> ( _ad_read (1 -> -> 6 `i `uc `ul -> -> -> 2 `i `l `ul `ui ]
+[; ;main.c: 71: bat_i_out = (uint32_t)ad_read(9) * 2;
+"71
+[e = _bat_i_out -> * -> ( _ad_read (1 -> -> 9 `i `uc `ul -> -> -> 2 `i `l `ul `ui ]
+[; ;main.c: 74: switch (mppt_state){
+"74
 [e $U 390  ]
-[; ;main.c: 105: case 'o':
-"105
+{
+[; ;main.c: 75: case 0:
+"75
+[e :U 391 ]
+[; ;main.c: 77: if ( (pv_v > 13000) &&
+[; ;main.c: 78: (bat_v < 12500) ){
+"78
+[e $ ! && > _pv_v -> -> 13000 `i `ui < _bat_v -> -> 12500 `i `ui 392  ]
+{
+[; ;main.c: 79: duty_cycle = 120;
+"79
+[e = _duty_cycle -> -> 120 `i `uc ]
+[; ;main.c: 80: pwm_set(duty_cycle);
+"80
+[e ( _pwm_set (1 _duty_cycle ]
+[; ;main.c: 81: pwm_init();
+"81
+[e ( _pwm_init ..  ]
+[; ;main.c: 82: mppt_state = 1;
+"82
+[e = _mppt_state -> -> 1 `i `uc ]
+"83
+}
+[e :U 392 ]
+[; ;main.c: 83: }
+[; ;main.c: 84: break;
+"84
+[e $U 389  ]
+[; ;main.c: 86: case 1:
+"86
+[e :U 393 ]
+[; ;main.c: 88: if ((bat_i_in < 40) || (bat_v >= 12500)){
+"88
+[e $ ! || < _bat_i_in -> -> 40 `i `ui >= _bat_v -> -> 12500 `i `ui 394  ]
+{
+[; ;main.c: 89: mppt_state = 0;
+"89
+[e = _mppt_state -> -> 0 `i `uc ]
+[; ;main.c: 90: pwm_deinit();
+"90
+[e ( _pwm_deinit ..  ]
+[; ;main.c: 91: break;
+"91
+[e $U 389  ]
+"92
+}
+[e :U 394 ]
+[; ;main.c: 92: }
+[; ;main.c: 94: if ((bat_v >= bat_v_old) && (duty_cycle > 40)) duty_cycle--;
+"94
+[e $ ! && >= _bat_v _bat_v_old > -> _duty_cycle `i -> 40 `i 395  ]
+[e -- _duty_cycle -> -> 1 `i `uc ]
+[e $U 396  ]
+"95
+[e :U 395 ]
+[; ;main.c: 95: else{
+{
+[; ;main.c: 96: duty_cycle++;
+"96
+[e ++ _duty_cycle -> -> 1 `i `uc ]
+[; ;main.c: 97: mppt_state = 2;
+"97
+[e = _mppt_state -> -> 2 `i `uc ]
+"98
+}
 [e :U 396 ]
+[; ;main.c: 98: }
+[; ;main.c: 99: pwm_set(duty_cycle);
+"99
+[e ( _pwm_set (1 _duty_cycle ]
+[; ;main.c: 100: break;
+"100
+[e $U 389  ]
+[; ;main.c: 102: case 2:
+"102
+[e :U 397 ]
+[; ;main.c: 104: if ((bat_i_in < 40) || (bat_v >= 12500)){
+"104
+[e $ ! || < _bat_i_in -> -> 40 `i `ui >= _bat_v -> -> 12500 `i `ui 398  ]
+{
+[; ;main.c: 105: mppt_state = 0;
+"105
+[e = _mppt_state -> -> 0 `i `uc ]
 [; ;main.c: 106: pwm_deinit();
 "106
 [e ( _pwm_deinit ..  ]
 [; ;main.c: 107: break;
 "107
-[e $U 390  ]
-[; ;main.c: 108: case 'p':
+[e $U 389  ]
 "108
-[e :U 397 ]
-[; ;main.c: 109: pwm_init();
-"109
-[e ( _pwm_init ..  ]
-[; ;main.c: 110: break;
+}
+[e :U 398 ]
+[; ;main.c: 108: }
+[; ;main.c: 110: if ((bat_v >= bat_v_old) && (duty_cycle < 120)) duty_cycle++;
 "110
-[e $U 390  ]
+[e $ ! && >= _bat_v _bat_v_old < -> _duty_cycle `i -> 120 `i 399  ]
+[e ++ _duty_cycle -> -> 1 `i `uc ]
+[e $U 400  ]
+"111
+[e :U 399 ]
+[; ;main.c: 111: else{
+{
+[; ;main.c: 112: duty_cycle--;
 "112
-}
-[; ;main.c: 112: }
-[e $U 390  ]
-"92
-[e :U 391 ]
-[e [\ ( _uart_get ..  , $ -> -> 117 `ui `uc 392
- , $ -> -> 100 `ui `uc 394
- , $ -> -> 111 `ui `uc 396
- , $ -> -> 112 `ui `uc 397
- 390 ]
-"112
-[e :U 390 ]
+[e -- _duty_cycle -> -> 1 `i `uc ]
+[; ;main.c: 113: mppt_state = 1;
 "113
-}
-[e :U 387 ]
-"91
-[e $ != -> ( _uart_inwaiting ..  `i -> -> -> 0 `i `uc `i 388  ]
-[e :U 389 ]
-[; ;main.c: 113: }
-[; ;main.c: 115: pv_v = (uint32_t)ad_read(7) * 21790 / 1000;
-"115
-[e = _pv_v -> / * -> ( _ad_read (1 -> -> 7 `i `uc `ul -> -> -> 21790 `i `l `ul -> -> -> 1000 `i `l `ul `ui ]
-[; ;main.c: 116: pv_i = (uint32_t)ad_read(5) * 2;
-"116
-[e = _pv_i -> * -> ( _ad_read (1 -> -> 5 `i `uc `ul -> -> -> 2 `i `l `ul `ui ]
-[; ;main.c: 117: bat_v = (uint32_t)ad_read(8) * 21904 / 1000;
-"117
-[e = _bat_v -> / * -> ( _ad_read (1 -> -> 8 `i `uc `ul -> -> -> 21904 `i `l `ul -> -> -> 1000 `i `l `ul `ui ]
-[; ;main.c: 118: bat_i_in = (uint32_t)ad_read(6) * 2;
-"118
-[e = _bat_i_in -> * -> ( _ad_read (1 -> -> 6 `i `uc `ul -> -> -> 2 `i `l `ul `ui ]
-[; ;main.c: 119: bat_i_out = (uint32_t)ad_read(9) * 2;
-"119
-[e = _bat_i_out -> * -> ( _ad_read (1 -> -> 9 `i `uc `ul -> -> -> 2 `i `l `ul `ui ]
-[; ;main.c: 121: switch (mppt_state){
-"121
-[e $U 399  ]
-{
-[; ;main.c: 122: case 0:
-"122
-[e :U 400 ]
-[; ;main.c: 125: if ( (pv_v > 13000) &&
-[; ;main.c: 126: (bat_v < 12500) ){
-"126
-[e $ ! && > _pv_v -> -> 13000 `i `ui < _bat_v -> -> 12500 `i `ui 401  ]
-{
-[; ;main.c: 127: duty_cycle = 120;
-"127
-[e = _duty_cycle -> -> 120 `i `uc ]
-[; ;main.c: 128: pwm_set(duty_cycle);
-"128
-[e ( _pwm_set (1 _duty_cycle ]
-[; ;main.c: 129: pwm_init();
-"129
-[e ( _pwm_init ..  ]
-[; ;main.c: 130: mppt_state = 1;
-"130
 [e = _mppt_state -> -> 1 `i `uc ]
-"131
+"114
 }
+[e :U 400 ]
+[; ;main.c: 114: }
+[; ;main.c: 115: pwm_set(duty_cycle);
+"115
+[e ( _pwm_set (1 _duty_cycle ]
+[; ;main.c: 116: break;
+"116
+[e $U 389  ]
+"117
+}
+[; ;main.c: 117: }
+[e $U 389  ]
+"74
+[e :U 390 ]
+[e [\ _mppt_state , $ -> -> 0 `i `uc 391
+ , $ -> -> 1 `i `uc 393
+ , $ -> -> 2 `i `uc 397
+ 389 ]
+"117
+[e :U 389 ]
+[; ;main.c: 118: bat_v_old = bat_v;
+"118
+[e = _bat_v_old _bat_v ]
+[; ;main.c: 121: uart_puts("$");
+"121
+[e ( _uart_puts (1 :s 1C ]
+[; ;main.c: 122: uart_put_int(pv_v);
+"122
+[e ( _uart_put_int (1 -> _pv_v `l ]
+[; ;main.c: 123: uart_puts(",");
+"123
+[e ( _uart_puts (1 :s 2C ]
+[; ;main.c: 124: if (pv_v > 2500) uart_put_int(pv_i);
+"124
+[e $ ! > _pv_v -> -> 2500 `i `ui 401  ]
+[e ( _uart_put_int (1 -> _pv_i `l ]
+[e $U 402  ]
+"125
 [e :U 401 ]
-[; ;main.c: 131: }
-[; ;main.c: 132: break;
-"132
-[e $U 398  ]
-[; ;main.c: 134: case 1:
-"134
+[; ;main.c: 125: else uart_puts(",");
+[e ( _uart_puts (1 :s 3C ]
 [e :U 402 ]
-[; ;main.c: 135: if ((bat_i_in < 40) || (bat_v >= 12500)){
+[; ;main.c: 126: uart_puts(",");
+"126
+[e ( _uart_puts (1 :s 4C ]
+[; ;main.c: 127: uart_put_int(bat_v);
+"127
+[e ( _uart_put_int (1 -> _bat_v `l ]
+[; ;main.c: 128: uart_puts(",");
+"128
+[e ( _uart_puts (1 :s 5C ]
+[; ;main.c: 129: if (bat_v > 2500) uart_put_int(bat_i_in);
+"129
+[e $ ! > _bat_v -> -> 2500 `i `ui 403  ]
+[e ( _uart_put_int (1 -> _bat_i_in `l ]
+[e :U 403 ]
+[; ;main.c: 130: uart_puts(",");
+"130
+[e ( _uart_puts (1 :s 6C ]
+[; ;main.c: 131: if (bat_v > 2500) uart_put_int(bat_i_out);
+"131
+[e $ ! > _bat_v -> -> 2500 `i `ui 404  ]
+[e ( _uart_put_int (1 -> _bat_i_out `l ]
+[e :U 404 ]
+[; ;main.c: 132: uart_puts(",");
+"132
+[e ( _uart_puts (1 :s 7C ]
+[; ;main.c: 133: uart_put_int(duty_cycle);
+"133
+[e ( _uart_put_int (1 -> _duty_cycle `l ]
+[; ;main.c: 134: uart_puts(",");
+"134
+[e ( _uart_puts (1 :s 8C ]
+[; ;main.c: 135: switch (mppt_state){
 "135
-[e $ ! || < _bat_i_in -> -> 40 `i `ui >= _bat_v -> -> 12500 `i `ui 403  ]
+[e $U 406  ]
 {
-[; ;main.c: 136: mppt_state = 0;
+[; ;main.c: 136: case 0: uart_puts("SHDN"); break;
 "136
-[e = _mppt_state -> -> 0 `i `uc ]
-[; ;main.c: 137: pwm_deinit();
+[e :U 407 ]
+[e ( _uart_puts (1 :s 9C ]
+[e $U 405  ]
+[; ;main.c: 137: case 2: uart_puts("INC"); break;
 "137
-[e ( _pwm_deinit ..  ]
-[; ;main.c: 138: break;
+[e :U 408 ]
+[e ( _uart_puts (1 :s 10C ]
+[e $U 405  ]
+[; ;main.c: 138: case 1: uart_puts("DEC"); break;
 "138
-[e $U 398  ]
+[e :U 409 ]
+[e ( _uart_puts (1 :s 11C ]
+[e $U 405  ]
 "139
 }
-[e :U 403 ]
 [; ;main.c: 139: }
-[; ;main.c: 140: if ((bat_v >= bat_v_old) && (duty_cycle > 40)) duty_cycle--;
-"140
-[e $ ! && >= _bat_v _bat_v_old > -> _duty_cycle `i -> 40 `i 404  ]
-[e -- _duty_cycle -> -> 1 `i `uc ]
 [e $U 405  ]
-"141
-[e :U 404 ]
-[; ;main.c: 141: else{
-{
-[; ;main.c: 142: duty_cycle++;
-"142
-[e ++ _duty_cycle -> -> 1 `i `uc ]
-[; ;main.c: 143: mppt_state = 2;
-"143
-[e = _mppt_state -> -> 2 `i `uc ]
-"144
-}
-[e :U 405 ]
-[; ;main.c: 144: }
-[; ;main.c: 145: pwm_set(duty_cycle);
-"145
-[e ( _pwm_set (1 _duty_cycle ]
-[; ;main.c: 146: break;
-"146
-[e $U 398  ]
-[; ;main.c: 148: case 2:
-"148
+"135
 [e :U 406 ]
-[; ;main.c: 149: if ((bat_i_in < 40) || (bat_v >= 12500)){
-"149
-[e $ ! || < _bat_i_in -> -> 40 `i `ui >= _bat_v -> -> 12500 `i `ui 407  ]
-{
-[; ;main.c: 150: mppt_state = 0;
-"150
-[e = _mppt_state -> -> 0 `i `uc ]
-[; ;main.c: 151: pwm_deinit();
-"151
-[e ( _pwm_deinit ..  ]
-[; ;main.c: 152: break;
-"152
-[e $U 398  ]
-"153
-}
-[e :U 407 ]
-[; ;main.c: 153: }
-[; ;main.c: 154: if ((bat_v >= bat_v_old) && (duty_cycle < 120)) duty_cycle++;
-"154
-[e $ ! && >= _bat_v _bat_v_old < -> _duty_cycle `i -> 120 `i 408  ]
-[e ++ _duty_cycle -> -> 1 `i `uc ]
-[e $U 409  ]
-"155
-[e :U 408 ]
-[; ;main.c: 155: else{
-{
-[; ;main.c: 156: duty_cycle--;
-"156
-[e -- _duty_cycle -> -> 1 `i `uc ]
-[; ;main.c: 157: mppt_state = 1;
-"157
-[e = _mppt_state -> -> 1 `i `uc ]
-"158
-}
-[e :U 409 ]
-[; ;main.c: 158: }
-[; ;main.c: 159: pwm_set(duty_cycle);
-"159
-[e ( _pwm_set (1 _duty_cycle ]
-[; ;main.c: 160: break;
-"160
-[e $U 398  ]
-"161
-}
-[; ;main.c: 161: }
-[e $U 398  ]
-"121
-[e :U 399 ]
-[e [\ _mppt_state , $ -> -> 0 `i `uc 400
- , $ -> -> 1 `i `uc 402
- , $ -> -> 2 `i `uc 406
- 398 ]
-"161
-[e :U 398 ]
-[; ;main.c: 163: bat_v_old = bat_v;
-"163
-[e = _bat_v_old _bat_v ]
-[; ;main.c: 165: uart_puts("$");
-"165
-[e ( _uart_puts (1 :s 1C ]
-[; ;main.c: 166: uart_put_int(pv_v);
-"166
-[e ( _uart_put_int (1 -> _pv_v `l ]
-[; ;main.c: 167: uart_puts(",");
-"167
-[e ( _uart_puts (1 :s 2C ]
-[; ;main.c: 168: if (pv_v > 2500) uart_put_int(pv_i);
-"168
-[e $ ! > _pv_v -> -> 2500 `i `ui 410  ]
-[e ( _uart_put_int (1 -> _pv_i `l ]
-[e $U 411  ]
-"169
-[e :U 410 ]
-[; ;main.c: 169: else uart_puts(",");
-[e ( _uart_puts (1 :s 3C ]
-[e :U 411 ]
-[; ;main.c: 170: uart_puts(",");
-"170
-[e ( _uart_puts (1 :s 4C ]
-[; ;main.c: 171: uart_put_int(bat_v);
-"171
-[e ( _uart_put_int (1 -> _bat_v `l ]
-[; ;main.c: 172: uart_puts(",");
-"172
-[e ( _uart_puts (1 :s 5C ]
-[; ;main.c: 173: if (bat_v > 2500) uart_put_int(bat_i_in);
-"173
-[e $ ! > _bat_v -> -> 2500 `i `ui 412  ]
-[e ( _uart_put_int (1 -> _bat_i_in `l ]
-[e :U 412 ]
-[; ;main.c: 174: uart_puts(",");
-"174
-[e ( _uart_puts (1 :s 6C ]
-[; ;main.c: 175: if (bat_v > 2500) uart_put_int(bat_i_out);
-"175
-[e $ ! > _bat_v -> -> 2500 `i `ui 413  ]
-[e ( _uart_put_int (1 -> _bat_i_out `l ]
-[e :U 413 ]
-[; ;main.c: 176: uart_puts(",");
-"176
-[e ( _uart_puts (1 :s 7C ]
-[; ;main.c: 177: uart_put_int(duty_cycle);
-"177
-[e ( _uart_put_int (1 -> _duty_cycle `l ]
-[; ;main.c: 178: uart_puts(",");
-"178
-[e ( _uart_puts (1 :s 8C ]
-[; ;main.c: 179: switch (mppt_state){
-"179
-[e $U 415  ]
-{
-[; ;main.c: 180: case 0: uart_puts("SHDN"); break;
-"180
-[e :U 416 ]
-[e ( _uart_puts (1 :s 9C ]
-[e $U 414  ]
-[; ;main.c: 181: case 2: uart_puts("INC"); break;
-"181
-[e :U 417 ]
-[e ( _uart_puts (1 :s 10C ]
-[e $U 414  ]
-[; ;main.c: 182: case 1: uart_puts("DEC"); break;
-"182
-[e :U 418 ]
-[e ( _uart_puts (1 :s 11C ]
-[e $U 414  ]
-"183
-}
-[; ;main.c: 183: }
-[e $U 414  ]
-"179
-[e :U 415 ]
-[e [\ _mppt_state , $ -> -> 0 `i `uc 416
- , $ -> -> 2 `i `uc 417
- , $ -> -> 1 `i `uc 418
- 414 ]
-"183
-[e :U 414 ]
-[; ;main.c: 184: uart_puts("\r\n");
-"184
+[e [\ _mppt_state , $ -> -> 0 `i `uc 407
+ , $ -> -> 2 `i `uc 408
+ , $ -> -> 1 `i `uc 409
+ 405 ]
+"139
+[e :U 405 ]
+[; ;main.c: 140: uart_puts("\r\n");
+"140
 [e ( _uart_puts (1 :s 12C ]
-"200
+[; ;main.c: 156: {
+"156
+{
+"157
 [v _j `ui ~T0 @X0 1 a ]
-[; ;main.c: 200: uint16_t j;
-[; ;main.c: 201: for (j=0; j<100; j++) _delay((unsigned long)((1)*(16000000/4000.0)));
-"201
+[; ;main.c: 157: uint16_t j;
+[; ;main.c: 158: for (j=0; j<100; j++) _delay((unsigned long)((1)*(16000000/4000.0)));
+"158
 {
 [e = _j -> -> 0 `i `ui ]
-[e $ < _j -> -> 100 `i `ui 419  ]
-[e $U 420  ]
-[e :U 419 ]
+[e $ < _j -> -> 100 `i `ui 410  ]
+[e $U 411  ]
+[e :U 410 ]
 [e ( __delay (1 -> * -> -> 1 `i `d / -> -> 16000000 `l `d .4000.0 `ul ]
 [e ++ _j -> -> 1 `i `ui ]
-[e $ < _j -> -> 100 `i `ui 419  ]
-[e :U 420 ]
+[e $ < _j -> -> 100 `i `ui 410  ]
+[e :U 411 ]
 }
-"203
+"159
 }
-[e :U 384 ]
-"90
-[e $U 385  ]
-[e :U 386 ]
-[; ;main.c: 203: }
-[; ;main.c: 205: return 0;
-"205
+"160
+}
+[e :U 375 ]
+"39
+[e $U 376  ]
+[e :U 377 ]
+[; ;main.c: 159: }
+[; ;main.c: 160: }
+[; ;main.c: 162: return 0;
+"162
 [e ) -> 0 `i ]
-[e $UE 383  ]
-[; ;main.c: 206: }
-"206
-[e :UE 383 ]
+[e $UE 374  ]
+[; ;main.c: 163: }
+"163
+[e :UE 374 ]
 }
 [a 9C 83 72 68 78 0 ]
 [a 10C 73 78 67 0 ]

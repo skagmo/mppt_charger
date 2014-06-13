@@ -3662,31 +3662,31 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;pic18.h: 147: extern __nonreentrant void _delay(unsigned long);
 [; ;pic18.h: 149: extern __nonreentrant void _delaywdt(unsigned long);
 [; ;pic18.h: 151: extern __nonreentrant void _delay3(unsigned char);
-"7 platform.h
+"17 platform.h
 [p x FOSC=IRC ]
-"8
-[p x PLLEN=OFF ]
-"9
-[p x PCLKEN=ON ]
-"10
-[p x FCMEN=OFF ]
-"11
-[p x IESO=OFF ]
-"12
-[p x BOREN=SBORDIS ]
-"13
-[p x BORV=19 ]
-"14
-[p x WDTEN=OFF ]
-"15
-[p x WDTPS=32 ]
-"16
-[p x HFOFST=OFF ]
-"17
-[p x MCLRE=OFF ]
 "18
+[p x PLLEN=OFF ]
+"19
+[p x PCLKEN=ON ]
+"20
+[p x FCMEN=OFF ]
+"21
+[p x IESO=OFF ]
+"22
+[p x BOREN=SBORDIS ]
+"23
+[p x BORV=19 ]
+"24
+[p x WDTEN=OFF ]
+"25
+[p x WDTPS=32 ]
+"26
+[p x HFOFST=OFF ]
+"27
+[p x MCLRE=OFF ]
+"28
 [p x LVP=OFF ]
-[; ;platform.h: 20: void general_init();
+[; ;platform.h: 30: void general_init();
 "10 uart.c
 [v _rxbuffer `Vuc ~T0 @X0 -> 32 `i e ]
 [; ;uart.c: 10: volatile char rxbuffer[32];

@@ -4846,7 +4846,7 @@ extern __nonreentrant void _delaywdt(unsigned long);
 extern __nonreentrant void _delay3(unsigned char);
 
 
-# 7 "platform.h"
+# 17 "platform.h"
 #pragma config FOSC = IRC
 #pragma config PLLEN = OFF
 #pragma config PCLKEN = ON

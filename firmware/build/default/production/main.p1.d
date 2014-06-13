@@ -2,5 +2,5 @@
  build/default/production/main.p1:  \
  main.c  \
 platform.h  \
-settings.h  \
+perf.h  \
 uart.h 

@@ -1,0 +1,31 @@
+Solar panel MPPT charger
+
+<h2>Introduction</h2>
+Solar panels are cheaper and more popular than ever, but without a MPPT (Maximum Power Point Tracking) charger the maximum power level of the solar panel will not be achieved. In this article I will show you how I designed such a charger for use in an autonomous solar powered boat project, as well as for hiking with solar panels.
+
+<h2>Problem</h2>
+A solar panel can not be directly connected to a battery or a conventional charger with the expectation that it will deliver the rated power. Maximum charging power will only be achieved when the solar panel can operate on its optimum voltage level - the maximum power point.
+
+>>KURVE
+
+What further complicates this is that the maximum power point is not fixed, but will vary with solar intensity. The solution is to build a charger able to continously track the maximum power point and change the apparent load seen by the solar panel to ensure maximum power is transferred.
+
+>>BLACKBOX
+
+<h2>Design</h2>
+
+The hardware is basically a microcontroller reading voltage and current to control the duty cycle of a synchronous switch mode buck regulator. 
+
+The principle of the software is very simple. The power from the solar panel is calculated as voltage * current measured by the microcontroller. The duty cycle of the switching regulator is always changed slightly in a direction. If this change results in increased power from the solar panel, the algorithm continues in this direction until the power stops increasing. At this point the algorithm changes direction.
+
+The switching circuit itself uses some power, so to conserve power when the sun is down, the charger enters a sleep state when the charge current goes below a treshold and starts again when the solar panel open voltage increases above another treshold.
+
+Initial testing did show some very noisy voltage and current measurements due to voltage spikes on switching transitions. Adding a few low ESR ceramic capacitors close to the switching circuit dramatically reduced the ripple and measurements were suddenly very stable.
+
+<h2>Results</h2>
+
+I used a 20 W panel from eBay to do the testing. Charging a 3 cell (3S) LiPo-battery directly provided a peak charge power of around 15 W. Putting the MPPT-charger inbetween increased the charging power to 21.5 W - even more than the rated power!
+
+<h2>Files</h2>
+
+Github

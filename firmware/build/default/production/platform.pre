@@ -2,7 +2,7 @@
 # 1 "platform.c"
 
 
-# 7 "platform.h"
+# 17 "platform.h"
 #pragma config FOSC = IRC
 #pragma config PLLEN = OFF
 #pragma config PCLKEN = ON

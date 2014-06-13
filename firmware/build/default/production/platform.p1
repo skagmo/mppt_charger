@@ -17,31 +17,31 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _TRISB `Vuc ~T0 @X0 0 e@3987 ]
 "2248
 [v _TRISC `Vuc ~T0 @X0 0 e@3988 ]
-"7 platform.h
+"17 platform.h
 [p x FOSC=IRC ]
-"8
-[p x PLLEN=OFF ]
-"9
-[p x PCLKEN=ON ]
-"10
-[p x FCMEN=OFF ]
-"11
-[p x IESO=OFF ]
-"12
-[p x BOREN=SBORDIS ]
-"13
-[p x BORV=19 ]
-"14
-[p x WDTEN=OFF ]
-"15
-[p x WDTPS=32 ]
-"16
-[p x HFOFST=OFF ]
-"17
-[p x MCLRE=OFF ]
 "18
+[p x PLLEN=OFF ]
+"19
+[p x PCLKEN=ON ]
+"20
+[p x FCMEN=OFF ]
+"21
+[p x IESO=OFF ]
+"22
+[p x BOREN=SBORDIS ]
+"23
+[p x BORV=19 ]
+"24
+[p x WDTEN=OFF ]
+"25
+[p x WDTPS=32 ]
+"26
+[p x HFOFST=OFF ]
+"27
+[p x MCLRE=OFF ]
+"28
 [p x LVP=OFF ]
-[; ;platform.h: 20: void general_init();
+[; ;platform.h: 30: void general_init();
 [; ;htc.h: 21: extern const char __xc8_OPTIM_SPEED;
 [; ;htc.h: 24: extern void __builtin_software_breakpoint(void);
 [; ;pic18lf13k22.h: 47: extern volatile unsigned char SRCON0 @ 0xF68;

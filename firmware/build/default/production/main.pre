@@ -4865,17 +4865,8 @@ extern char * strichr(const char *, int);
 extern char * strrchr(const char *, int);
 extern char * strrichr(const char *, int);
 
-# 6 "settings.h"
-typedef struct{
-uint32_t chg_vmax;
-}main_set_t;
 
-extern main_set_t main_set;
-
-void set_defaults(main_set_t* s);
-
-
-# 7 "platform.h"
+# 17 "platform.h"
 #pragma config FOSC = IRC
 #pragma config PLLEN = OFF
 #pragma config PCLKEN = ON
@@ -4903,66 +4894,34 @@ void uart_puts_block(const char *s);
 
 void uart_put_int(int32_t n);
 
-# 32 "main.c"
-void pwm_init(void){
+# 6 "perf.h"
+void pwm_init(void);
+void pwm_deinit(void);
+void pwm_set(uint8_t level);
+void ad_init(void);
+int ad_read(char channel);
 
-PR2 = 31;
-T2CONbits.T2OUTPS = 0;
-T2CONbits.T2CKPS = 0;
-T2CONbits.TMR2ON = 1;
-
-
-CCP1CONbits.CCP1M = 0b1100;
-CCP1CONbits.P1M = 0b10;
-
-
-PWM1CON = 1;
-}
-
-void pwm_deinit(void){
-CCP1CONbits.CCP1M = 0;
-LATCbits.LATC5 = LATCbits.LATC4 = 0;
-}
-
-void pwm_set(uint8_t level){
-CCPR1L = (level >> 2);
-CCP1CONbits.DC1B = level & 0b11;
-}
-
-void ad_init(void){
-
-ANSEL = 0b11100000;
-ANSELH = 0b00000011;
-ADCON1bits.PVCFG = 0b10;
-ADCON1bits.NVCFG = 0;
-ADCON2 = 0b10101110;
-
-
-VREFCON0 = 0b10100000;
-ADCON0bits.ADON = 1;
-}
-
-int ad_read(char channel){
-ADCON0 = (channel<<2) | 0b11;
-while (ADCON0&0b10);
-return ((ADRESH<<8) + ADRESL);
-}
-
+# 22 "main.c"
 int main(int argc, char** argv) {
+
 general_init();
 pwm_deinit();
 ad_init();
 uart_init(38400);
 _delay((unsigned long)((20)*(16000000/4000.0)));
 
-uint8_t mppt_state = 0;
-uint8_t duty_cycle;
-uint16_t pv_v, pv_i, bat_v, bat_i_in, bat_i_out, bat_v_old;
 
 INTCONbits.PEIE = 1;
 INTCONbits.GIE = 1;
 
+uint8_t mppt_state = 0;
+uint8_t duty_cycle = 120;
+uint16_t pv_v, pv_i, bat_v, bat_i_in, bat_i_out, bat_v_old;
+
+
 while(1){
+
+
 while (uart_inwaiting()){
 switch (uart_get()){
 case 'u':
@@ -4987,15 +4946,16 @@ break;
 }
 }
 
+
 pv_v = (uint32_t)ad_read(7) * 21790 / 1000;
 pv_i = (uint32_t)ad_read(5) * 2;
 bat_v = (uint32_t)ad_read(8) * 21904 / 1000;
 bat_i_in = (uint32_t)ad_read(6) * 2;
 bat_i_out = (uint32_t)ad_read(9) * 2;
 
+
 switch (mppt_state){
 case 0:
-
 
 if ( (pv_v > 13000) &&
 (bat_v < 12500) ){
@@ -5007,11 +4967,13 @@ mppt_state = 1;
 break;
 
 case 1:
+
 if ((bat_i_in < 40) || (bat_v >= 12500)){
 mppt_state = 0;
 pwm_deinit();
 break;
 }
+
 if ((bat_v >= bat_v_old) && (duty_cycle > 40)) duty_cycle--;
 else{
 duty_cycle++;
@@ -5021,11 +4983,13 @@ pwm_set(duty_cycle);
 break;
 
 case 2:
+
 if ((bat_i_in < 40) || (bat_v >= 12500)){
 mppt_state = 0;
 pwm_deinit();
 break;
 }
+
 if ((bat_v >= bat_v_old) && (duty_cycle < 120)) duty_cycle++;
 else{
 duty_cycle--;
@@ -5034,8 +4998,8 @@ mppt_state = 1;
 pwm_set(duty_cycle);
 break;
 }
-
 bat_v_old = bat_v;
+
 
 uart_puts("$");
 uart_put_int(pv_v);
@@ -5058,10 +5022,11 @@ case 1: uart_puts("DEC"); break;
 }
 uart_puts("\r\n");
 
-# 200
+# 156
+{
 uint16_t j;
 for (j=0; j<100; j++) _delay((unsigned long)((1)*(16000000/4000.0)));
-
+}
 }
 
 return 0;

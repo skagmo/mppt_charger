@@ -1,5 +1,5 @@
 
-# 1 "helpers.c"
+# 1 "perf.c"
 
 # 13 "C:\Program Files (x86)\Microchip\xc8\v1.31\include\stdint.h"
 typedef signed char int8_t;
@@ -91,12 +91,12 @@ typedef int16_t intptr_t;
 
 typedef uint16_t uintptr_t;
 
-# 6 "helpers.h"
-void adInit();
-void timerInit();
-int read_ad(char channel);
-unsigned int crc_1021(unsigned int old_crc, char data);
-unsigned int crc_calc(char* data, char data_len);
+# 6 "perf.h"
+void pwm_init(void);
+void pwm_deinit(void);
+void pwm_set(uint8_t level);
+void ad_init(void);
+int ad_read(char channel);
 
 # 21 "C:\Program Files (x86)\Microchip\xc8\v1.31\include\htc.h"
 extern const char __xc8_OPTIM_SPEED;
@@ -4840,41 +4840,64 @@ extern __nonreentrant void _delaywdt(unsigned long);
 #pragma intrinsic(_delay3)
 extern __nonreentrant void _delay3(unsigned char);
 
-# 6 "helpers.c"
-void adInit(){
-ANSEL = 0b01110100;
-ANSELH = 0b00000001;
-ADCON1 = 0b00001000;
+
+# 17 "platform.h"
+#pragma config FOSC = IRC
+#pragma config PLLEN = OFF
+#pragma config PCLKEN = ON
+#pragma config FCMEN = OFF
+#pragma config IESO = OFF
+#pragma config BOREN = SBORDIS
+#pragma config BORV = 19
+#pragma config WDTEN = OFF
+#pragma config WDTPS = 32
+#pragma config HFOFST = OFF
+#pragma config MCLRE = OFF
+#pragma config LVP = OFF
+
+void general_init();
+
+# 7 "perf.c"
+void pwm_init(void){
+
+PR2 = 31;
+T2CONbits.T2OUTPS = 0;
+T2CONbits.T2CKPS = 0;
+T2CONbits.TMR2ON = 1;
+
+
+CCP1CONbits.CCP1M = 0b1100;
+CCP1CONbits.P1M = 0b10;
+
+
+PWM1CON = 1;
+}
+
+void pwm_deinit(void){
+CCP1CONbits.CCP1M = 0;
+LATCbits.LATC5 = LATCbits.LATC4 = 0;
+}
+
+void pwm_set(uint8_t level){
+CCPR1L = (level >> 2);
+CCP1CONbits.DC1B = level & 0b11;
+}
+
+void ad_init(void){
+
+ANSEL = 0b11100000;
+ANSELH = 0b00000011;
+ADCON1bits.PVCFG = 0b10;
+ADCON1bits.NVCFG = 0;
 ADCON2 = 0b10101110;
-VREFCON0 = 0b10010000;
-ADCON0 = 0b00000001;
+
+
+VREFCON0 = 0b10100000;
+ADCON0bits.ADON = 1;
 }
 
-void timerInit(){
-T0CON = 0b10000111;
-}
-
-int read_ad(char channel){
-long result = 0;
-for (char j=0; j<8; j++){
+int ad_read(char channel){
 ADCON0 = (channel<<2) | 0b11;
 while (ADCON0&0b10);
-result += (ADRESH<<8) + ADRESL;
-}
-return result>>3;
-}
-
-unsigned int crc_1021(unsigned int old_crc, char data){
-unsigned int crc;
-unsigned int x;
-x = ((old_crc>>8) ^ data) & 0xFF;
-x ^= x>>4;
-crc = (old_crc << 8) ^ (x << 12) ^ (x << 5) ^ x;
-return crc;
-}
-
-unsigned int crc_calc(char* data, char data_len){
-unsigned int crc_value = 0;
-for (char j=0; j<data_len; j++) crc_value = crc_1021(crc_value, data[j]);
-return crc_value;
+return ((ADRESH<<8) + ADRESL);
 }

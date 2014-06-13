@@ -1,18 +1,88 @@
 Version 3.2 HI-TECH Software Intermediate Code
-"753 C:\Program Files (x86)\Microchip\xc8\v1.31\include\pic18lf13k22.h
+"5221 C:\Program Files (x86)\Microchip\xc8\v1.31\include\pic18lf13k22.h
+[v _PR2 `Vuc ~T0 @X0 0 e@4043 ]
+[s S275 :2 `uc 1 :1 `uc 1 :4 `uc 1 ]
+[n S275 . T2CKPS TMR2ON T2OUTPS ]
+[s S276 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S276 . T2CKPS0 T2CKPS1 . T2OUTPS0 T2OUTPS1 T2OUTPS2 T2OUTPS3 ]
+[u S274 `S275 1 `S276 1 ]
+[n S274 . . . ]
+"5172
+[v _T2CONbits `VS274 ~T0 @X0 0 e@4042 ]
+[s S234 :4 `uc 1 :2 `uc 1 :2 `uc 1 ]
+[n S234 . CCP1M DC1B P1M ]
+[s S235 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S235 . CCP1M0 CCP1M1 CCP1M2 CCP1M3 DC1B0 DC1B1 P1M0 P1M1 ]
+[u S233 `S234 1 `S235 1 ]
+[n S233 . . . ]
+"4435
+[v _CCP1CONbits `VS233 ~T0 @X0 0 e@4029 ]
+"3827
+[v _PWM1CON `Vuc ~T0 @X0 0 e@4023 ]
+[s S98 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S98 . LATC0 LATC1 LATC2 LATC3 LATC4 LATC5 LATC6 LATC7 ]
+[s S99 :1 `uc 1 ]
+[n S99 . LC0 ]
+[s S100 :1 `uc 1 :1 `uc 1 ]
+[n S100 . . LC1 ]
+[s S101 :2 `uc 1 :1 `uc 1 ]
+[n S101 . . LC2 ]
+[s S102 :3 `uc 1 :1 `uc 1 ]
+[n S102 . . LC3 ]
+[s S103 :4 `uc 1 :1 `uc 1 ]
+[n S103 . . LC4 ]
+[s S104 :5 `uc 1 :1 `uc 1 ]
+[n S104 . . LC5 ]
+[s S105 :6 `uc 1 :1 `uc 1 ]
+[n S105 . . LC6 ]
+[s S106 :7 `uc 1 :1 `uc 1 ]
+[n S106 . . LC7 ]
+[u S97 `S98 1 `S99 1 `S100 1 `S101 1 `S102 1 `S103 1 `S104 1 `S105 1 `S106 1 ]
+[n S97 . . . . . . . . . . ]
+"1882
+[v _LATCbits `VS97 ~T0 @X0 0 e@3979 ]
+"4500
+[v _CCPR1L `Vuc ~T0 @X0 0 e@4030 ]
+"753
 [v _ANSEL `Vuc ~T0 @X0 0 e@3966 ]
 "872
 [v _ANSELH `Vuc ~T0 @X0 0 e@3967 ]
-"4582
-[v _ADCON1 `Vuc ~T0 @X0 0 e@4033 ]
+[s S240 :2 `uc 1 :2 `uc 1 ]
+[n S240 . NVCFG PVCFG ]
+[s S241 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S241 . NVCFG0 NVCFG1 PVCFG0 PVCFG1 ]
+[s S242 :3 `uc 1 :1 `uc 1 ]
+[n S242 . . CHSN3 ]
+[u S239 `S240 1 `S241 1 `S242 1 ]
+[n S239 . . . . ]
+"4603
+[v _ADCON1bits `VS239 ~T0 @X0 0 e@4033 ]
 "4512
 [v _ADCON2 `Vuc ~T0 @X0 0 e@4032 ]
 "4104
 [v _VREFCON0 `Vuc ~T0 @X0 0 e@4026 ]
+[s S244 :1 `uc 1 :1 `uc 1 ]
+[n S244 . . GO_NOT_DONE ]
+[s S245 :1 `uc 1 :1 `uc 1 :4 `uc 1 ]
+[n S245 . ADON GO_nDONE CHS ]
+[s S246 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S246 . . DONE CHS0 CHS1 CHS2 CHS3 ]
+[s S247 :1 `uc 1 :1 `uc 1 ]
+[n S247 . . NOT_DONE ]
+[s S248 :1 `uc 1 :1 `uc 1 ]
+[n S248 . . nDONE ]
+[s S249 :1 `uc 1 :1 `uc 1 ]
+[n S249 . . GO_DONE ]
+[s S250 :1 `uc 1 :1 `uc 1 ]
+[n S250 . . GO ]
+[s S251 :1 `uc 1 :1 `uc 1 ]
+[n S251 . . GODONE ]
+[u S243 `S244 1 `S245 1 `S246 1 `S247 1 `S248 1 `S249 1 `S250 1 `S251 1 ]
+[n S243 . . . . . . . . . ]
+"4686
+[v _ADCON0bits `VS243 ~T0 @X0 0 e@4034 ]
 "4642
 [v _ADCON0 `Vuc ~T0 @X0 0 e@4034 ]
-"5730
-[v _T0CON `Vuc ~T0 @X0 0 e@4053 ]
 "4772
 [v _ADRESH `Vuc ~T0 @X0 0 e@4036 ]
 "4766
@@ -45,11 +115,11 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;stdint.h: 205: typedef uint32_t uintmax_t;
 [; ;stdint.h: 210: typedef int16_t intptr_t;
 [; ;stdint.h: 215: typedef uint16_t uintptr_t;
-[; ;helpers.h: 6: void adInit();
-[; ;helpers.h: 7: void timerInit();
-[; ;helpers.h: 8: int read_ad(char channel);
-[; ;helpers.h: 9: unsigned int crc_1021(unsigned int old_crc, char data);
-[; ;helpers.h: 10: unsigned int crc_calc(char* data, char data_len);
+[; ;perf.h: 6: void pwm_init(void);
+[; ;perf.h: 7: void pwm_deinit(void);
+[; ;perf.h: 8: void pwm_set(uint8_t level);
+[; ;perf.h: 9: void ad_init(void);
+[; ;perf.h: 10: int ad_read(char channel);
 [; ;htc.h: 21: extern const char __xc8_OPTIM_SPEED;
 [; ;htc.h: 24: extern void __builtin_software_breakpoint(void);
 [; ;pic18lf13k22.h: 47: extern volatile unsigned char SRCON0 @ 0xF68;
@@ -3590,158 +3660,148 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;pic18.h: 147: extern __nonreentrant void _delay(unsigned long);
 [; ;pic18.h: 149: extern __nonreentrant void _delaywdt(unsigned long);
 [; ;pic18.h: 151: extern __nonreentrant void _delay3(unsigned char);
-"6 helpers.c
-[v _adInit `(v ~T0 @X0 1 ef ]
+"17 platform.h
+[p x FOSC=IRC ]
+"18
+[p x PLLEN=OFF ]
+"19
+[p x PCLKEN=ON ]
+"20
+[p x FCMEN=OFF ]
+"21
+[p x IESO=OFF ]
+"22
+[p x BOREN=SBORDIS ]
+"23
+[p x BORV=19 ]
+"24
+[p x WDTEN=OFF ]
+"25
+[p x WDTPS=32 ]
+"26
+[p x HFOFST=OFF ]
+"27
+[p x MCLRE=OFF ]
+"28
+[p x LVP=OFF ]
+[; ;platform.h: 30: void general_init();
+"7 perf.c
+[v _pwm_init `(v ~T0 @X0 1 ef ]
 {
-[; ;helpers.c: 6: void adInit(){
-[e :U _adInit ]
+[; ;perf.c: 7: void pwm_init(void){
+[e :U _pwm_init ]
 [f ]
-[; ;helpers.c: 7: ANSEL = 0b01110100;
-"7
-[e = _ANSEL -> -> 116 `i `uc ]
-[; ;helpers.c: 8: ANSELH = 0b00000001;
-"8
-[e = _ANSELH -> -> 1 `i `uc ]
-[; ;helpers.c: 9: ADCON1 = 0b00001000;
+[; ;perf.c: 9: PR2 = 31;
 "9
-[e = _ADCON1 -> -> 8 `i `uc ]
-[; ;helpers.c: 10: ADCON2 = 0b10101110;
+[e = _PR2 -> -> 31 `i `uc ]
+[; ;perf.c: 10: T2CONbits.T2OUTPS = 0;
 "10
-[e = _ADCON2 -> -> 174 `i `uc ]
-[; ;helpers.c: 11: VREFCON0 = 0b10010000;
+[e = . . _T2CONbits 0 2 -> -> 0 `i `uc ]
+[; ;perf.c: 11: T2CONbits.T2CKPS = 0;
 "11
-[e = _VREFCON0 -> -> 144 `i `uc ]
-[; ;helpers.c: 12: ADCON0 = 0b00000001;
+[e = . . _T2CONbits 0 0 -> -> 0 `i `uc ]
+[; ;perf.c: 12: T2CONbits.TMR2ON = 1;
 "12
-[e = _ADCON0 -> -> 1 `i `uc ]
-[; ;helpers.c: 13: }
-"13
+[e = . . _T2CONbits 0 1 -> -> 1 `i `uc ]
+[; ;perf.c: 15: CCP1CONbits.CCP1M = 0b1100;
+"15
+[e = . . _CCP1CONbits 0 0 -> -> 12 `i `uc ]
+[; ;perf.c: 16: CCP1CONbits.P1M = 0b10;
+"16
+[e = . . _CCP1CONbits 0 2 -> -> 2 `i `uc ]
+[; ;perf.c: 19: PWM1CON = 1;
+"19
+[e = _PWM1CON -> -> 1 `i `uc ]
+[; ;perf.c: 20: }
+"20
 [e :UE 374 ]
 }
-"15
-[v _timerInit `(v ~T0 @X0 1 ef ]
+"22
+[v _pwm_deinit `(v ~T0 @X0 1 ef ]
 {
-[; ;helpers.c: 15: void timerInit(){
-[e :U _timerInit ]
+[; ;perf.c: 22: void pwm_deinit(void){
+[e :U _pwm_deinit ]
 [f ]
-[; ;helpers.c: 16: T0CON = 0b10000111;
-"16
-[e = _T0CON -> -> 135 `i `uc ]
-[; ;helpers.c: 17: }
-"17
+[; ;perf.c: 23: CCP1CONbits.CCP1M = 0;
+"23
+[e = . . _CCP1CONbits 0 0 -> -> 0 `i `uc ]
+[; ;perf.c: 24: LATCbits.LATC5 = LATCbits.LATC4 = 0;
+"24
+[e = . . _LATCbits 0 5 = . . _LATCbits 0 4 -> -> 0 `i `uc ]
+[; ;perf.c: 25: }
+"25
 [e :UE 375 ]
 }
-"19
-[v _read_ad `(i ~T0 @X0 1 ef1`uc ]
-{
-[; ;helpers.c: 19: int read_ad(char channel){
-[e :U _read_ad ]
-[v _channel `uc ~T0 @X0 1 r1 ]
-[f ]
-"20
-[v _result `l ~T0 @X0 1 a ]
-[; ;helpers.c: 20: long result = 0;
-[e = _result -> -> 0 `i `l ]
-[; ;helpers.c: 21: for (char j=0; j<8; j++){
-"21
-{
-[v _j `uc ~T0 @X0 1 a ]
-[e = _j -> -> 0 `i `uc ]
-[e $ < -> _j `i -> 8 `i 377  ]
-[e $U 378  ]
-[e :U 377 ]
-{
-[; ;helpers.c: 22: ADCON0 = (channel<<2) | 0b11;
-"22
-[e = _ADCON0 -> | << -> _channel `i -> 2 `i -> 3 `i `uc ]
-[; ;helpers.c: 23: while (ADCON0&0b10);
-"23
-[e $U 380  ]
-[e :U 381 ]
-[e :U 380 ]
-[e $ != & -> _ADCON0 `i -> 2 `i -> 0 `i 381  ]
-[e :U 382 ]
-[; ;helpers.c: 24: result += (ADRESH<<8) + ADRESL;
-"24
-[e =+ _result -> + << -> _ADRESH `i -> 8 `i -> _ADRESL `i `l ]
-"25
-}
-"21
-[e ++ _j -> -> 1 `i `uc ]
-[e $ < -> _j `i -> 8 `i 377  ]
-[e :U 378 ]
-"25
-}
-[; ;helpers.c: 25: }
-[; ;helpers.c: 26: return result>>3;
-"26
-[e ) -> >> _result -> 3 `i `i ]
-[e $UE 376  ]
-[; ;helpers.c: 27: }
 "27
+[v _pwm_set `(v ~T0 @X0 1 ef1`uc ]
+{
+[; ;perf.c: 27: void pwm_set(uint8_t level){
+[e :U _pwm_set ]
+[v _level `uc ~T0 @X0 1 r1 ]
+[f ]
+[; ;perf.c: 28: CCPR1L = (level >> 2);
+"28
+[e = _CCPR1L -> >> -> _level `i -> 2 `i `uc ]
+[; ;perf.c: 29: CCP1CONbits.DC1B = level & 0b11;
+"29
+[e = . . _CCP1CONbits 0 1 -> & -> _level `i -> 3 `i `uc ]
+[; ;perf.c: 30: }
+"30
 [e :UE 376 ]
 }
-"29
-[v _crc_1021 `(ui ~T0 @X0 1 ef2`ui`uc ]
-{
-[; ;helpers.c: 29: unsigned int crc_1021(unsigned int old_crc, char data){
-[e :U _crc_1021 ]
-[v _old_crc `ui ~T0 @X0 1 r1 ]
-[v _data `uc ~T0 @X0 1 r2 ]
-[f ]
-"30
-[v _crc `ui ~T0 @X0 1 a ]
-"31
-[v _x `ui ~T0 @X0 1 a ]
-[; ;helpers.c: 30: unsigned int crc;
-[; ;helpers.c: 31: unsigned int x;
-[; ;helpers.c: 32: x = ((old_crc>>8) ^ data) & 0xFF;
 "32
-[e = _x & ^ >> _old_crc -> 8 `i -> _data `ui -> -> 255 `i `ui ]
-[; ;helpers.c: 33: x ^= x>>4;
-"33
-[e =^ _x >> _x -> 4 `i ]
-[; ;helpers.c: 34: crc = (old_crc << 8) ^ (x << 12) ^ (x << 5) ^ x;
-"34
-[e = _crc ^ ^ ^ << _old_crc -> 8 `i << _x -> 12 `i << _x -> 5 `i _x ]
-[; ;helpers.c: 35: return crc;
-"35
-[e ) _crc ]
-[e $UE 383  ]
-[; ;helpers.c: 36: }
-"36
-[e :UE 383 ]
-}
-"38
-[v _crc_calc `(ui ~T0 @X0 1 ef2`*uc`uc ]
+[v _ad_init `(v ~T0 @X0 1 ef ]
 {
-[; ;helpers.c: 38: unsigned int crc_calc(char* data, char data_len){
-[e :U _crc_calc ]
-[v _data `*uc ~T0 @X0 1 r1 ]
-[v _data_len `uc ~T0 @X0 1 r2 ]
+[; ;perf.c: 32: void ad_init(void){
+[e :U _ad_init ]
 [f ]
-"39
-[v _crc_value `ui ~T0 @X0 1 a ]
-[; ;helpers.c: 39: unsigned int crc_value = 0;
-[e = _crc_value -> -> 0 `i `ui ]
-[; ;helpers.c: 40: for (char j=0; j<data_len; j++) crc_value = crc_1021(crc_value, data[j]);
-"40
-{
-[v _j `uc ~T0 @X0 1 a ]
-[e = _j -> -> 0 `i `uc ]
-[e $U 388  ]
-[e :U 385 ]
-[e = _crc_value ( _crc_1021 (2 , _crc_value *U + _data * -> _j `ux -> -> # *U _data `ui `ux ]
-[e ++ _j -> -> 1 `i `uc ]
-[e :U 388 ]
-[e $ < -> _j `i -> _data_len `i 385  ]
-[e :U 386 ]
-}
-[; ;helpers.c: 41: return crc_value;
+[; ;perf.c: 34: ANSEL = 0b11100000;
+"34
+[e = _ANSEL -> -> 224 `i `uc ]
+[; ;perf.c: 35: ANSELH = 0b00000011;
+"35
+[e = _ANSELH -> -> 3 `i `uc ]
+[; ;perf.c: 36: ADCON1bits.PVCFG = 0b10;
+"36
+[e = . . _ADCON1bits 0 1 -> -> 2 `i `uc ]
+[; ;perf.c: 37: ADCON1bits.NVCFG = 0;
+"37
+[e = . . _ADCON1bits 0 0 -> -> 0 `i `uc ]
+[; ;perf.c: 38: ADCON2 = 0b10101110;
+"38
+[e = _ADCON2 -> -> 174 `i `uc ]
+[; ;perf.c: 41: VREFCON0 = 0b10100000;
 "41
-[e ) _crc_value ]
-[e $UE 384  ]
-[; ;helpers.c: 42: }
+[e = _VREFCON0 -> -> 160 `i `uc ]
+[; ;perf.c: 42: ADCON0bits.ADON = 1;
 "42
-[e :UE 384 ]
+[e = . . _ADCON0bits 1 0 -> -> 1 `i `uc ]
+[; ;perf.c: 43: }
+"43
+[e :UE 377 ]
+}
+"45
+[v _ad_read `(i ~T0 @X0 1 ef1`uc ]
+{
+[; ;perf.c: 45: int ad_read(char channel){
+[e :U _ad_read ]
+[v _channel `uc ~T0 @X0 1 r1 ]
+[f ]
+[; ;perf.c: 46: ADCON0 = (channel<<2) | 0b11;
+"46
+[e = _ADCON0 -> | << -> _channel `i -> 2 `i -> 3 `i `uc ]
+[; ;perf.c: 47: while (ADCON0&0b10);
+"47
+[e $U 379  ]
+[e :U 380 ]
+[e :U 379 ]
+[e $ != & -> _ADCON0 `i -> 2 `i -> 0 `i 380  ]
+[e :U 381 ]
+[; ;perf.c: 48: return ((ADRESH<<8) + ADRESL);
+"48
+[e ) + << -> _ADRESH `i -> 8 `i -> _ADRESL `i ]
+[e $UE 378  ]
+[; ;perf.c: 49: }
+"49
+[e :UE 378 ]
 }
