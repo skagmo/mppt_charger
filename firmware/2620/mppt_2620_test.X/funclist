@@ -1,0 +1,21 @@
+_platform_init: CODE, 61974 0 30
+_lcd_put: CODE, 62700 0 206
+_lcd_puts: CODE, 62120 0 50
+__stringdata: MEDIUMCONST, 65369 0 166
+_spi: CODE, 61926 0 18
+_lcd_font: MEDIUMCONST, 63903 0 480
+_memset: CODE, 62076 0 44
+_lcd_put_large: CODE, 62906 0 410
+_lcd_font_big: MEDIUMCONST, 64383 0 224
+_main: CODE, 63316 0 586
+_lcd_refresh: CODE, 62278 0 122
+_lcd_puts_large: CODE, 62170 0 50
+__initialization: CODE, 62004 0 24
+_lcd_clear: CODE, 61944 0 30
+_lcd_cursor: CODE, 61912 0 14
+_lcd_bitmap: CODE, 62546 0 154
+_se_logo: MEDIUMCONST, 64607 0 762
+_delay_ms: CODE, 62034 0 42
+___wmul: CODE, 62220 0 58
+_lcd_init: CODE, 62400 0 146
+Total: 3616

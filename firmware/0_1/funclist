@@ -1,0 +1,21 @@
+_pwm_set: CODE, 2902 0 34
+___aldiv: CODE, 1836 0 264
+_general_init: CODE, 3026 0 22
+__stringdata: SMALLCONST, 257 0 20
+_ad_init: CODE, 2936 0 32
+_main: CODE, 278 0 1240
+___almod: CODE, 2100 0 232
+___lmul: CODE, 2596 0 86
+_uart_init: CODE, 2466 0 130
+__initialization: CODE, 2968 0 20
+_uart_get: CODE, 2826 0 38
+___lldiv: CODE, 2332 0 134
+_isr: CODE, 8 0 192
+_uart_put: CODE, 2682 0 62
+_uart_puts: CODE, 2744 0 42
+_ad_read: CODE, 2864 0 38
+_uart_inwaiting: CODE, 2998 0 28
+_uart_put_int: CODE, 1518 0 318
+_pwm_init: CODE, 2786 0 40
+_pwm_deinit: CODE, 3048 0 14
+Total: 2986

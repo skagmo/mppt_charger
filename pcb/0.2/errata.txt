@@ -1,0 +1,5 @@
+- Re-add resistors on transistor gates
+- Add pull-down on transitor gates
+- Move bootstrap-cap closer to chip
+- Replaceable fuse for battery
+- Capacitors on INA139 outputs

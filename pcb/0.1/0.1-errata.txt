@@ -1,0 +1,21 @@
+ - 27211A not pin compatible with IR2183:
+   Rotate chip 180 degrees
+   Move high side FET source connection from pin 6 to 8
+   Low side input is not inverted
+   Bootstrap-diode built in
+ - Higher voltage FETs
+ - LCD-footprint
+ - Switch uC to PIC18LF26K20 or better
+ - Add 0.1u ceramic caps close to switch (especially on input)
+ - Room for more bulk capacitance and through hole caps
+ - PTC fuse for battery
+ - Ideal diode from inductor output to battery? Probably not necessary with PTC fuse
+ - FET-switches directly connected to battery
+ - Remove PV/BAT-selector
+ - Replace screw holes with regular holes with copper ring
+ - Solder pads for power connection
+ - P-channel FET for LCD-LED connected to PWM-output
+ - Switch mode regulator
+ - JST-XH UART connector
+ - Button-footprint
+ - Change shunts to 3225-package

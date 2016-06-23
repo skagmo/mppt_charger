@@ -1,10 +1,13 @@
- - HW: Lodde på enda en shunt i parallell (10mohm/2) (4A maks: 4A * 0.005 * 100k / 1k = 2V)
- - FW: UART ringbuffer spytter ut en runde med 0x00 under oppstart
+- FW: UART ringbuffer spytter ut en bufferstørrelse med 0x00 under oppstart
+- Lodde inn gate-resistorer?
+
+Low-side transistoren må ha en viss duty-cycle for at high-side-transistoren skal fungere!
+Årsaken er at boot-kondensatoren lades opp her gang low-side går aktiv.
 
 Målt 21.5 Wp med 20 W panel!
 
 Ratings:
- - PV: 25 V max (caps), 30 V max (FET)
+ - PV: 35 V max (caps), 30 V max (FET), 40V (INA139), C10/11
  - Bat: 17 V max når header står i BAT
  - Current: 1 mA per spenningsdeler, xx mA per INA139, ca. 24 mA på uC
  - Ripple: 2A 2V 50 mV rippel ut, 12V in
@@ -12,11 +15,12 @@ Ratings:
 $14952,1282,12802,1477,44,113 19.2w inn, 18.9w ut
 $14958,1260,12785,1451,41,113
 
-Transistorer:
- Vishay:
-  http://www.vishay.com/mosfets/so-8-package/
- Fairchild:
-  FDS6681Z
-  FDS6679: -13A, 9mohm, -25 Vgs, -30Vds 
-  FDS86140: 11.2A, 9.8 mohm,
-  LFPAK?
+http://www.daycounter.com/Calculators/Switching-Converter-Calculator.phtml
+
+2 mohm shunt gir 10A maks: 10A * 0.002 * 100k / 1k = 2V
+
+60V FET DMT6016LSS-13DICT-ND
+3.3v 1a reg 945-1661-5-ND
+Mppt spole 541-1289-1-ND
+P-kanal SOT23 til MPPT LCD DMG2305UX-13DICT-ND
+CAP ALUM 100UF 20% 63V RADIAL P13137-ND
