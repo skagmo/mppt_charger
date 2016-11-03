@@ -14,7 +14,7 @@ void config_default_load(void){
 	config.bat_v_max = 12000;
 	config.aux1_shdn = 10500;
 	config.aux2_shdn = 10500;
-	config.shdn_hyst = 200;
+	config.shdn_hyst = 500;
 	config.aux1_dstate = 1;
 	config.aux2_dstate = 1;
 	config.print_int = 1000;

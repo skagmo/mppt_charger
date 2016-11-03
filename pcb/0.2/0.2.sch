@@ -10896,76 +10896,160 @@ DIN A3, landscape with location and doc. field</description>
 </classes>
 <parts>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
-<part name="ICSP" library="01-eos-components" deviceset="1X5_ICSP" device=""/>
-<part name="L1" library="01-eos-components" deviceset="INDUCTOR" device="IHLP-6767" value="33u"/>
-<part name="D1" library="SparkFun" deviceset="DIODE" device="SMB"/>
-<part name="RS2" library="rcl" deviceset="R-US_" device="R3225" value="2m"/>
+<part name="ICSP" library="01-eos-components" deviceset="1X5_ICSP" device="">
+<attribute name="PARTNO" value="*"/>
+</part>
+<part name="L1" library="01-eos-components" deviceset="INDUCTOR" device="IHLP-6767" value="33u">
+<attribute name="PARTNO" value="IHLP6767GZER330M11"/>
+</part>
+<part name="D1" library="SparkFun" deviceset="DIODE" device="SMB">
+<attribute name="PARTNO" value="SK54B-LTP"/>
+</part>
+<part name="RS2" library="rcl" deviceset="R-US_" device="R3225" value="2m">
+<attribute name="PARTNO" value="PMR25HZPFV2L00"/>
+</part>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
-<part name="RS3" library="rcl" deviceset="R-US_" device="R3225" value="2m"/>
-<part name="U4" library="08-maritime-components" deviceset="INA-169" device="" value="INA-139"/>
+<part name="RS3" library="rcl" deviceset="R-US_" device="R3225" value="2m">
+<attribute name="PARTNO" value="PMR25HZPFV2L00"/>
+</part>
+<part name="U4" library="08-maritime-components" deviceset="INA-169" device="" value="INA-139">
+<attribute name="PARTNO" value="INA139NA/250"/>
+</part>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="GND20" library="supply1" deviceset="GND" device=""/>
 <part name="GND26" library="supply1" deviceset="GND" device=""/>
-<part name="U5" library="08-maritime-components" deviceset="INA-169" device="" value="INA-139"/>
+<part name="U5" library="08-maritime-components" deviceset="INA-169" device="" value="INA-139">
+<attribute name="PARTNO" value="INA139NA/250"/>
+</part>
 <part name="GND27" library="supply1" deviceset="GND" device=""/>
 <part name="GND28" library="supply1" deviceset="GND" device=""/>
-<part name="U6" library="08-maritime-components" deviceset="INA-169" device="" value="INA-139"/>
+<part name="U6" library="08-maritime-components" deviceset="INA-169" device="" value="INA-139">
+<attribute name="PARTNO" value="INA139NA/250"/>
+</part>
 <part name="GND29" library="supply1" deviceset="GND" device=""/>
 <part name="GND30" library="supply1" deviceset="GND" device=""/>
 <part name="GND31" library="supply1" deviceset="GND" device=""/>
-<part name="Q5" library="01-eos-components" deviceset="PMOSFET_P" device=""/>
+<part name="Q5" library="01-eos-components" deviceset="PMOSFET_P" device="">
+<attribute name="PARTNO" value="FDS6681Z"/>
+</part>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
-<part name="Q6" library="01-eos-components" deviceset="PMOSFET_P" device=""/>
+<part name="Q6" library="01-eos-components" deviceset="PMOSFET_P" device="">
+<attribute name="PARTNO" value="FDS6681Z"/>
+</part>
 <part name="GND9" library="supply1" deviceset="GND" device=""/>
 <part name="P+1" library="supply1" deviceset="VCC" device=""/>
 <part name="P+4" library="supply1" deviceset="VCC" device=""/>
 <part name="P+5" library="supply1" deviceset="VCC" device=""/>
 <part name="P+6" library="supply1" deviceset="VCC" device=""/>
-<part name="R3" library="01-eos-components" deviceset="RESISTOR" device="0603" value="100K"/>
-<part name="R4" library="01-eos-components" deviceset="RESISTOR" device="0603" value="100K"/>
-<part name="R6" library="01-eos-components" deviceset="RESISTOR" device="0603" value="100K"/>
-<part name="R7" library="01-eos-components" deviceset="RESISTOR" device="0603" value="10K"/>
-<part name="R13" library="01-eos-components" deviceset="RESISTOR" device="0603" value="1K"/>
-<part name="R14" library="01-eos-components" deviceset="RESISTOR" device="0603" value="1K"/>
-<part name="R15" library="01-eos-components" deviceset="RESISTOR" device="0603" value="10K"/>
-<part name="C2" library="01-eos-components" deviceset="CAP" device="0603" value="0.1u"/>
-<part name="C5" library="01-eos-components" deviceset="CAP" device="0603" value="1u"/>
+<part name="R3" library="01-eos-components" deviceset="RESISTOR" device="0603" value="100K">
+<attribute name="PARTNO" value="*"/>
+</part>
+<part name="R4" library="01-eos-components" deviceset="RESISTOR" device="0603" value="100K">
+<attribute name="PARTNO" value="*"/>
+</part>
+<part name="R6" library="01-eos-components" deviceset="RESISTOR" device="0603" value="100K">
+<attribute name="PARTNO" value="*"/>
+</part>
+<part name="R7" library="01-eos-components" deviceset="RESISTOR" device="0603" value="10K">
+<attribute name="PARTNO" value="*"/>
+</part>
+<part name="R13" library="01-eos-components" deviceset="RESISTOR" device="0603" value="1K">
+<attribute name="PARTNO" value="*"/>
+</part>
+<part name="R14" library="01-eos-components" deviceset="RESISTOR" device="0603" value="1K">
+<attribute name="PARTNO" value="*"/>
+</part>
+<part name="R15" library="01-eos-components" deviceset="RESISTOR" device="0603" value="10K">
+<attribute name="PARTNO" value="*"/>
+</part>
+<part name="C2" library="01-eos-components" deviceset="CAP" device="0603" value="0.1u">
+<attribute name="PARTNO" value="*"/>
+</part>
+<part name="C5" library="01-eos-components" deviceset="CAP" device="0603" value="1u">
+<attribute name="PARTNO" value="*"/>
+</part>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
 <part name="GND12" library="supply1" deviceset="GND" device=""/>
 <part name="P+2" library="supply1" deviceset="VCC" device=""/>
 <part name="GND13" library="supply1" deviceset="GND" device=""/>
 <part name="P+3" library="supply1" deviceset="VCC" device=""/>
-<part name="C4" library="01-eos-components" deviceset="CAP" device="0603" value="0.1u"/>
-<part name="C7" library="01-eos-components" deviceset="CAP" device="0603" value="0.1u"/>
-<part name="C12" library="01-eos-components" deviceset="CAP" device="0603" value="0.1u"/>
+<part name="C4" library="01-eos-components" deviceset="CAP" device="0603" value="0.1u">
+<attribute name="PARTNO" value="*"/>
+</part>
+<part name="C7" library="01-eos-components" deviceset="CAP" device="0603" value="0.1u">
+<attribute name="PARTNO" value="*"/>
+</part>
+<part name="C12" library="01-eos-components" deviceset="CAP" device="0603" value="0.1u">
+<attribute name="PARTNO" value="*"/>
+</part>
 <part name="GND19" library="supply1" deviceset="GND" device=""/>
 <part name="GND22" library="supply1" deviceset="GND" device=""/>
 <part name="GND23" library="supply1" deviceset="GND" device=""/>
-<part name="R1" library="01-eos-components" deviceset="RESISTOR" device="0603" value="47k"/>
-<part name="R5" library="01-eos-components" deviceset="RESISTOR" device="0603" value="22k"/>
-<part name="R8" library="01-eos-components" deviceset="RESISTOR" device="0603" value="22k"/>
-<part name="R9" library="01-eos-components" deviceset="RESISTOR" device="0603" value="47k"/>
+<part name="R1" library="01-eos-components" deviceset="RESISTOR" device="0603" value="47k">
+<attribute name="PARTNO" value="*"/>
+</part>
+<part name="R5" library="01-eos-components" deviceset="RESISTOR" device="0603" value="22k">
+<attribute name="PARTNO" value="*"/>
+</part>
+<part name="R8" library="01-eos-components" deviceset="RESISTOR" device="0603" value="22k">
+<attribute name="PARTNO" value="*"/>
+</part>
+<part name="R9" library="01-eos-components" deviceset="RESISTOR" device="0603" value="47k">
+<attribute name="PARTNO" value="*"/>
+</part>
 <part name="GND24" library="supply1" deviceset="GND" device=""/>
-<part name="Q1" library="01-eos-components" deviceset="PMOSFET_N" device="" value="FDS6699"/>
-<part name="Q2" library="01-eos-components" deviceset="PMOSFET_N" device="" value="FDS6699"/>
-<part name="F4" library="01-eos-components" deviceset="FUSE" device="1206" value="5A"/>
-<part name="C13" library="01-eos-components" deviceset="CAP" device="0603" value="1u"/>
+<part name="Q1" library="01-eos-components" deviceset="PMOSFET_N" device="" value="FDS6699">
+<attribute name="PARTNO" value="SI4128DY-T1-GE3"/>
+</part>
+<part name="Q2" library="01-eos-components" deviceset="PMOSFET_N" device="" value="FDS6699">
+<attribute name="PARTNO" value="SI4128DY-T1-GE3"/>
+</part>
+<part name="F4" library="01-eos-components" deviceset="FUSE" device="1206" value="5A">
+<attribute name="PARTNO" value="C1T 5"/>
+</part>
+<part name="C13" library="01-eos-components" deviceset="CAP" device="0603" value="1u">
+<attribute name="PARTNO" value="*"/>
+</part>
 <part name="GND37" library="supply1" deviceset="GND" device=""/>
-<part name="X1" library="00-mr-library" deviceset="TXC-7A" device="" value="8M"/>
-<part name="C14" library="01-eos-components" deviceset="CAP" device="0603" value="12p"/>
-<part name="C15" library="01-eos-components" deviceset="CAP" device="0603" value="12p"/>
+<part name="X1" library="00-mr-library" deviceset="TXC-7A" device="" value="8M">
+<attribute name="PARTNO" value="7A-8.000MAAE-T"/>
+</part>
+<part name="C14" library="01-eos-components" deviceset="CAP" device="0603" value="12p">
+<attribute name="PARTNO" value="*"/>
+</part>
+<part name="C15" library="01-eos-components" deviceset="CAP" device="0603" value="12p">
+<attribute name="PARTNO" value="*"/>
+</part>
 <part name="GND38" library="supply1" deviceset="GND" device=""/>
 <part name="GND39" library="supply1" deviceset="GND" device=""/>
 <part name="FRAME2" library="frames" deviceset="A3L-LOC" device=""/>
-<part name="U1" library="01-eos-components" deviceset="PIC18F26K20-E/SS" device=""/>
-<part name="LCD" library="01-eos-components" deviceset="LCD_12864" device=""/>
-<part name="C3" library="rcl" deviceset="CPOL-EU" device="E3.5-8" value="220u"/>
-<part name="C8" library="rcl" deviceset="CPOL-EU" device="E3.5-8" value="220u"/>
-<part name="C9" library="rcl" deviceset="CPOL-EU" device="E3.5-8" value="220u"/>
-<part name="C10" library="01-eos-components" deviceset="CAP" device="0603" value="0.1u"/>
-<part name="C11" library="01-eos-components" deviceset="CAP" device="0603" value="0.1u"/>
-<part name="C18" library="01-eos-components" deviceset="CAP" device="0603" value="0.1u"/>
-<part name="C19" library="01-eos-components" deviceset="CAP" device="0603" value="0.1u"/>
+<part name="U1" library="01-eos-components" deviceset="PIC18F26K20-E/SS" device="">
+<attribute name="PARTNO" value="PIC18F26K22-I/SS"/>
+</part>
+<part name="LCD" library="01-eos-components" deviceset="LCD_12864" device="">
+<attribute name="PARTNO" value="*"/>
+</part>
+<part name="C3" library="rcl" deviceset="CPOL-EU" device="E3.5-8" value="220u">
+<attribute name="PARTNO" value="35ZLH220MEFC8X11.5"/>
+</part>
+<part name="C8" library="rcl" deviceset="CPOL-EU" device="E3.5-8" value="220u">
+<attribute name="PARTNO" value="35ZLH220MEFC8X11.5"/>
+</part>
+<part name="C9" library="rcl" deviceset="CPOL-EU" device="E3.5-8" value="220u">
+<attribute name="PARTNO" value="35ZLH220MEFC8X11.5"/>
+</part>
+<part name="C10" library="01-eos-components" deviceset="CAP" device="0603" value="0.1u">
+<attribute name="PARTNO" value="*"/>
+</part>
+<part name="C11" library="01-eos-components" deviceset="CAP" device="0603" value="0.1u">
+<attribute name="PARTNO" value="*"/>
+</part>
+<part name="C18" library="01-eos-components" deviceset="CAP" device="0603" value="0.1u">
+<attribute name="PARTNO" value="*"/>
+</part>
+<part name="C19" library="01-eos-components" deviceset="CAP" device="0603" value="0.1u">
+<attribute name="PARTNO" value="*"/>
+</part>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
 <part name="GND10" library="supply1" deviceset="GND" device=""/>
@@ -10973,22 +11057,40 @@ DIN A3, landscape with location and doc. field</description>
 <part name="GND14" library="supply1" deviceset="GND" device=""/>
 <part name="GND21" library="supply1" deviceset="GND" device=""/>
 <part name="GND33" library="supply1" deviceset="GND" device=""/>
-<part name="U2" library="01-eos-components" deviceset="UCC27211A" device=""/>
+<part name="U2" library="01-eos-components" deviceset="UCC27211A" device="">
+<attribute name="PARTNO" value="UCC27211D"/>
+</part>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
-<part name="C16" library="rcl" deviceset="CPOL-EU" device="E3.5-8" value="220u"/>
+<part name="C16" library="rcl" deviceset="CPOL-EU" device="E3.5-8" value="220u">
+<attribute name="PARTNO" value="35ZLH220MEFC8X11.5"/>
+</part>
 <part name="GND15" library="supply1" deviceset="GND" device=""/>
 <part name="GND25" library="supply1" deviceset="GND" device=""/>
-<part name="S1" library="00-mr-library" deviceset="TAC_SWITCH" device=""/>
-<part name="Q7" library="01-eos-components" deviceset="MOSFET_P" device="_SOT23"/>
+<part name="S1" library="00-mr-library" deviceset="TAC_SWITCH" device="">
+<attribute name="PARTNO" value="*"/>
+</part>
+<part name="Q7" library="01-eos-components" deviceset="MOSFET_P" device="_SOT23">
+<attribute name="PARTNO" value="*"/>
+</part>
 <part name="P+7" library="supply1" deviceset="VCC" device=""/>
 <part name="GND32" library="supply1" deviceset="GND" device=""/>
 <part name="P+8" library="supply1" deviceset="VCC" device=""/>
-<part name="U7" library="03-vhf_sdr" deviceset="R-78EXX" device=""/>
+<part name="U7" library="03-vhf_sdr" deviceset="R-78EXX" device="">
+<attribute name="PARTNO" value="R-78E3.3-0.5"/>
+</part>
 <part name="GND17" library="supply1" deviceset="GND" device=""/>
-<part name="H_UART" library="01-eos-components" deviceset="H1X3" device="_XH"/>
-<part name="RS1" library="rcl" deviceset="R-US_" device="R3225" value="2m"/>
-<part name="Q3" library="01-eos-components" deviceset="MOSFET_N" device="_SOT23-3"/>
-<part name="Q4" library="01-eos-components" deviceset="MOSFET_N" device="_SOT23-3"/>
+<part name="H_UART" library="01-eos-components" deviceset="H1X3" device="_XH">
+<attribute name="PARTNO" value="B3B-XH-A (LF)(SN)(P)"/>
+</part>
+<part name="RS1" library="rcl" deviceset="R-US_" device="R3225" value="2m">
+<attribute name="PARTNO" value="PMR25HZPFV2L00"/>
+</part>
+<part name="Q3" library="01-eos-components" deviceset="MOSFET_N" device="_SOT23-3">
+<attribute name="PARTNO" value="BSH103,215"/>
+</part>
+<part name="Q4" library="01-eos-components" deviceset="MOSFET_N" device="_SOT23-3">
+<attribute name="PARTNO" value="BSH103,215"/>
+</part>
 </parts>
 <sheets>
 <sheet>
@@ -11012,18 +11114,22 @@ skagmo.com</text>
 <instance part="GND8" gate="1" x="58.42" y="71.12"/>
 <instance part="ICSP" gate="G$1" x="35.56" y="78.74" smashed="yes" rot="MR0">
 <attribute name="NAME" x="27.94" y="86.868" size="1.778" layer="95"/>
+<attribute name="PARTNO" x="35.56" y="78.74" size="1.778" layer="96" rot="R270" display="off"/>
 </instance>
 <instance part="L1" gate="G$1" x="233.68" y="200.66" smashed="yes" rot="R90">
 <attribute name="NAME" x="228.6" y="203.2" size="1.778" layer="95"/>
 <attribute name="VALUE" x="238.76" y="203.2" size="1.778" layer="96" rot="R90"/>
+<attribute name="PARTNO" x="233.68" y="200.66" size="1.778" layer="96" rot="R270" display="off"/>
 </instance>
 <instance part="D1" gate="G$1" x="223.52" y="193.04" smashed="yes" rot="R90">
 <attribute name="NAME" x="226.06" y="190.9826" size="1.778" layer="95"/>
 <attribute name="VALUE" x="225.8314" y="195.58" size="1.778" layer="96" rot="R90"/>
+<attribute name="PARTNO" x="223.52" y="193.04" size="1.778" layer="96" rot="R270" display="off"/>
 </instance>
 <instance part="RS2" gate="G$1" x="276.86" y="200.66" smashed="yes" rot="R180">
 <attribute name="NAME" x="273.05" y="202.1586" size="1.778" layer="95"/>
 <attribute name="VALUE" x="273.05" y="197.358" size="1.778" layer="96"/>
+<attribute name="PARTNO" x="276.86" y="200.66" size="1.778" layer="96" rot="R270" display="off"/>
 </instance>
 <instance part="GND4" gate="1" x="223.52" y="187.96" smashed="yes">
 <attribute name="VALUE" x="220.98" y="185.42" size="1.778" layer="96"/>
@@ -11031,10 +11137,12 @@ skagmo.com</text>
 <instance part="RS3" gate="G$1" x="297.18" y="200.66" smashed="yes" rot="R180">
 <attribute name="NAME" x="293.37" y="202.1586" size="1.778" layer="95"/>
 <attribute name="VALUE" x="293.37" y="197.358" size="1.778" layer="96"/>
+<attribute name="PARTNO" x="297.18" y="200.66" size="1.778" layer="96" rot="R270" display="off"/>
 </instance>
 <instance part="U4" gate="G$1" x="129.54" y="226.06" smashed="yes">
 <attribute name="NAME" x="121.92" y="238.76" size="1.778" layer="95"/>
 <attribute name="VALUE" x="121.92" y="220.98" size="1.778" layer="96"/>
+<attribute name="PARTNO" x="129.54" y="226.06" size="1.778" layer="96" rot="R270" display="off"/>
 </instance>
 <instance part="GND1" gate="1" x="111.76" y="228.6" smashed="yes">
 <attribute name="VALUE" x="109.22" y="226.06" size="1.778" layer="96"/>
@@ -11048,6 +11156,7 @@ skagmo.com</text>
 <instance part="U5" gate="G$1" x="259.08" y="226.06" smashed="yes">
 <attribute name="NAME" x="251.46" y="239.268" size="1.778" layer="95"/>
 <attribute name="VALUE" x="251.46" y="220.98" size="1.778" layer="96"/>
+<attribute name="PARTNO" x="259.08" y="226.06" size="1.778" layer="96" rot="R270" display="off"/>
 </instance>
 <instance part="GND27" gate="1" x="241.3" y="228.6" smashed="yes">
 <attribute name="VALUE" x="238.76" y="226.06" size="1.778" layer="96"/>
@@ -11058,6 +11167,7 @@ skagmo.com</text>
 <instance part="U6" gate="G$1" x="312.42" y="226.06" smashed="yes">
 <attribute name="NAME" x="304.8" y="239.268" size="1.778" layer="95"/>
 <attribute name="VALUE" x="304.8" y="220.98" size="1.778" layer="96"/>
+<attribute name="PARTNO" x="312.42" y="226.06" size="1.778" layer="96" rot="R270" display="off"/>
 </instance>
 <instance part="GND29" gate="1" x="294.64" y="228.6" smashed="yes">
 <attribute name="VALUE" x="292.1" y="226.06" size="1.778" layer="96"/>
@@ -11071,6 +11181,7 @@ skagmo.com</text>
 <instance part="Q5" gate="G$1" x="307.34" y="129.54" smashed="yes">
 <attribute name="NAME" x="299.72" y="129.54" size="1.778" layer="95"/>
 <attribute name="VALUE" x="312.42" y="129.54" size="1.778" layer="96"/>
+<attribute name="PARTNO" x="307.34" y="129.54" size="1.778" layer="96" rot="R270" display="off"/>
 </instance>
 <instance part="GND7" gate="1" x="279.4" y="132.08" smashed="yes">
 <attribute name="VALUE" x="276.86" y="129.54" size="1.778" layer="96"/>
@@ -11078,6 +11189,7 @@ skagmo.com</text>
 <instance part="Q6" gate="G$1" x="307.34" y="154.94" smashed="yes">
 <attribute name="NAME" x="299.72" y="154.94" size="1.778" layer="95"/>
 <attribute name="VALUE" x="312.42" y="154.94" size="1.778" layer="96"/>
+<attribute name="PARTNO" x="307.34" y="154.94" size="1.778" layer="96" rot="R270" display="off"/>
 </instance>
 <instance part="GND9" gate="1" x="279.4" y="157.48" smashed="yes">
 <attribute name="VALUE" x="276.86" y="154.94" size="1.778" layer="96"/>
@@ -11088,27 +11200,41 @@ skagmo.com</text>
 <instance part="P+4" gate="VCC" x="330.2" y="241.3"/>
 <instance part="P+5" gate="VCC" x="276.86" y="241.3"/>
 <instance part="P+6" gate="VCC" x="147.32" y="241.3"/>
-<instance part="R3" gate="G$1" x="111.76" y="236.22"/>
+<instance part="R3" gate="G$1" x="111.76" y="236.22">
+<attribute name="PARTNO" x="111.76" y="236.22" size="1.778" layer="96" rot="R270" display="off"/>
+</instance>
 <instance part="R4" gate="G$1" x="241.3" y="236.22" smashed="yes">
 <attribute name="NAME" x="237.49" y="237.7186" size="1.778" layer="95"/>
 <attribute name="VALUE" x="237.49" y="232.918" size="1.778" layer="96"/>
+<attribute name="PARTNO" x="241.3" y="236.22" size="1.778" layer="96" rot="R270" display="off"/>
 </instance>
 <instance part="R6" gate="G$1" x="294.64" y="236.22" smashed="yes">
 <attribute name="NAME" x="290.83" y="237.7186" size="1.778" layer="95"/>
 <attribute name="VALUE" x="290.83" y="232.918" size="1.778" layer="96"/>
+<attribute name="PARTNO" x="294.64" y="236.22" size="1.778" layer="96" rot="R270" display="off"/>
 </instance>
 <instance part="R7" gate="G$1" x="134.62" y="193.04" smashed="yes" rot="R90">
 <attribute name="NAME" x="128.27" y="194.5386" size="1.778" layer="95"/>
 <attribute name="VALUE" x="128.27" y="192.278" size="1.778" layer="96"/>
+<attribute name="PARTNO" x="134.62" y="193.04" size="1.778" layer="96" rot="R270" display="off"/>
 </instance>
 <instance part="R13" gate="G$1" x="134.62" y="182.88" smashed="yes" rot="R90">
 <attribute name="NAME" x="128.27" y="184.3786" size="1.778" layer="95"/>
 <attribute name="VALUE" x="128.27" y="182.118" size="1.778" layer="96"/>
+<attribute name="PARTNO" x="134.62" y="182.88" size="1.778" layer="96" rot="R270" display="off"/>
 </instance>
-<instance part="R14" gate="G$1" x="281.94" y="185.42" rot="R90"/>
-<instance part="R15" gate="G$1" x="281.94" y="195.58" rot="R90"/>
-<instance part="C2" gate="G$1" x="121.92" y="134.62"/>
-<instance part="C5" gate="G$1" x="134.62" y="134.62"/>
+<instance part="R14" gate="G$1" x="281.94" y="185.42" rot="R90">
+<attribute name="PARTNO" x="281.94" y="185.42" size="1.778" layer="96" rot="R270" display="off"/>
+</instance>
+<instance part="R15" gate="G$1" x="281.94" y="195.58" rot="R90">
+<attribute name="PARTNO" x="281.94" y="195.58" size="1.778" layer="96" rot="R270" display="off"/>
+</instance>
+<instance part="C2" gate="G$1" x="121.92" y="134.62">
+<attribute name="PARTNO" x="121.92" y="134.62" size="1.778" layer="96" rot="R270" display="off"/>
+</instance>
+<instance part="C5" gate="G$1" x="134.62" y="134.62">
+<attribute name="PARTNO" x="134.62" y="134.62" size="1.778" layer="96" rot="R270" display="off"/>
+</instance>
 <instance part="GND6" gate="1" x="170.18" y="137.16" smashed="yes">
 <attribute name="VALUE" x="167.64" y="134.62" size="1.778" layer="96"/>
 </instance>
@@ -11120,9 +11246,15 @@ skagmo.com</text>
 <attribute name="VALUE" x="205.74" y="180.34" size="1.778" layer="96"/>
 </instance>
 <instance part="P+3" gate="VCC" x="58.42" y="88.9"/>
-<instance part="C4" gate="G$1" x="147.32" y="231.14" rot="R180"/>
-<instance part="C7" gate="G$1" x="276.86" y="231.14" rot="R180"/>
-<instance part="C12" gate="G$1" x="330.2" y="231.14" rot="R180"/>
+<instance part="C4" gate="G$1" x="147.32" y="231.14" rot="R180">
+<attribute name="PARTNO" x="147.32" y="231.14" size="1.778" layer="96" rot="R270" display="off"/>
+</instance>
+<instance part="C7" gate="G$1" x="276.86" y="231.14" rot="R180">
+<attribute name="PARTNO" x="276.86" y="231.14" size="1.778" layer="96" rot="R270" display="off"/>
+</instance>
+<instance part="C12" gate="G$1" x="330.2" y="231.14" rot="R180">
+<attribute name="PARTNO" x="330.2" y="231.14" size="1.778" layer="96" rot="R270" display="off"/>
+</instance>
 <instance part="GND19" gate="1" x="147.32" y="223.52" smashed="yes">
 <attribute name="VALUE" x="144.78" y="220.98" size="1.778" layer="96"/>
 </instance>
@@ -11135,35 +11267,52 @@ skagmo.com</text>
 <instance part="R1" gate="G$1" x="304.8" y="137.16" smashed="yes" rot="R180">
 <attribute name="NAME" x="303.53" y="138.6586" size="1.778" layer="95"/>
 <attribute name="VALUE" x="303.53" y="133.858" size="1.778" layer="96"/>
+<attribute name="PARTNO" x="304.8" y="137.16" size="1.778" layer="96" rot="R270" display="off"/>
 </instance>
 <instance part="R5" gate="G$1" x="294.64" y="137.16" smashed="yes" rot="R180">
 <attribute name="NAME" x="293.37" y="138.6586" size="1.778" layer="95"/>
 <attribute name="VALUE" x="293.37" y="133.858" size="1.778" layer="96"/>
+<attribute name="PARTNO" x="294.64" y="137.16" size="1.778" layer="96" rot="R270" display="off"/>
 </instance>
 <instance part="R8" gate="G$1" x="294.64" y="162.56" smashed="yes" rot="R180">
 <attribute name="NAME" x="293.37" y="164.0586" size="1.778" layer="95"/>
 <attribute name="VALUE" x="293.37" y="159.258" size="1.778" layer="96"/>
+<attribute name="PARTNO" x="294.64" y="162.56" size="1.778" layer="96" rot="R270" display="off"/>
 </instance>
 <instance part="R9" gate="G$1" x="304.8" y="162.56" smashed="yes" rot="R180">
 <attribute name="NAME" x="303.53" y="164.0586" size="1.778" layer="95"/>
 <attribute name="VALUE" x="303.53" y="159.258" size="1.778" layer="96"/>
+<attribute name="PARTNO" x="304.8" y="162.56" size="1.778" layer="96" rot="R270" display="off"/>
 </instance>
 <instance part="GND24" gate="1" x="43.18" y="210.82" smashed="yes">
 <attribute name="VALUE" x="40.64" y="208.28" size="1.778" layer="96"/>
 </instance>
-<instance part="Q1" gate="G$1" x="205.74" y="208.28"/>
-<instance part="Q2" gate="G$1" x="205.74" y="193.04"/>
+<instance part="Q1" gate="G$1" x="205.74" y="208.28">
+<attribute name="PARTNO" x="205.74" y="208.28" size="1.778" layer="96" rot="R270" display="off"/>
+</instance>
+<instance part="Q2" gate="G$1" x="205.74" y="193.04">
+<attribute name="PARTNO" x="205.74" y="193.04" size="1.778" layer="96" rot="R270" display="off"/>
+</instance>
 <instance part="F4" gate="G$1" x="299.72" y="180.34" smashed="yes">
 <attribute name="NAME" x="294.64" y="185.42" size="1.778" layer="95"/>
 <attribute name="VALUE" x="299.72" y="185.42" size="1.778" layer="96"/>
+<attribute name="PARTNO" x="299.72" y="180.34" size="1.778" layer="96" rot="R270" display="off"/>
 </instance>
-<instance part="C13" gate="G$1" x="76.2" y="96.52" rot="R180"/>
+<instance part="C13" gate="G$1" x="76.2" y="96.52" rot="R180">
+<attribute name="PARTNO" x="76.2" y="96.52" size="1.778" layer="96" rot="R270" display="off"/>
+</instance>
 <instance part="GND37" gate="1" x="76.2" y="88.9" smashed="yes">
 <attribute name="VALUE" x="73.66" y="86.36" size="1.778" layer="96"/>
 </instance>
-<instance part="X1" gate="G$1" x="88.9" y="71.12"/>
-<instance part="C14" gate="G$1" x="83.82" y="66.04" rot="R180"/>
-<instance part="C15" gate="G$1" x="93.98" y="66.04" rot="R180"/>
+<instance part="X1" gate="G$1" x="88.9" y="71.12">
+<attribute name="PARTNO" x="88.9" y="71.12" size="1.778" layer="96" rot="R270" display="off"/>
+</instance>
+<instance part="C14" gate="G$1" x="83.82" y="66.04" rot="R180">
+<attribute name="PARTNO" x="83.82" y="66.04" size="1.778" layer="96" rot="R270" display="off"/>
+</instance>
+<instance part="C15" gate="G$1" x="93.98" y="66.04" rot="R180">
+<attribute name="PARTNO" x="93.98" y="66.04" size="1.778" layer="96" rot="R270" display="off"/>
+</instance>
 <instance part="GND38" gate="1" x="83.82" y="58.42" smashed="yes">
 <attribute name="VALUE" x="83.82" y="55.88" size="1.778" layer="96" rot="R270"/>
 </instance>
@@ -11171,15 +11320,33 @@ skagmo.com</text>
 <attribute name="VALUE" x="93.98" y="55.88" size="1.778" layer="96" rot="R270"/>
 </instance>
 <instance part="FRAME2" gate="G$1" x="0" y="0"/>
-<instance part="U1" gate="A" x="160.02" y="81.28"/>
-<instance part="LCD" gate="G$1" x="38.1" y="177.8"/>
-<instance part="C3" gate="G$1" x="266.7" y="195.58"/>
-<instance part="C8" gate="G$1" x="154.94" y="195.58"/>
-<instance part="C9" gate="G$1" x="259.08" y="195.58"/>
-<instance part="C10" gate="G$1" x="170.18" y="193.04"/>
-<instance part="C11" gate="G$1" x="162.56" y="193.04"/>
-<instance part="C18" gate="G$1" x="251.46" y="193.04"/>
-<instance part="C19" gate="G$1" x="243.84" y="193.04"/>
+<instance part="U1" gate="A" x="160.02" y="81.28">
+<attribute name="PARTNO" x="160.02" y="81.28" size="1.778" layer="96" rot="R270" display="off"/>
+</instance>
+<instance part="LCD" gate="G$1" x="38.1" y="177.8">
+<attribute name="PARTNO" x="38.1" y="177.8" size="1.778" layer="96" rot="R270" display="off"/>
+</instance>
+<instance part="C3" gate="G$1" x="266.7" y="195.58">
+<attribute name="PARTNO" x="266.7" y="195.58" size="1.778" layer="96" rot="R270" display="off"/>
+</instance>
+<instance part="C8" gate="G$1" x="154.94" y="195.58">
+<attribute name="PARTNO" x="154.94" y="195.58" size="1.778" layer="96" rot="R270" display="off"/>
+</instance>
+<instance part="C9" gate="G$1" x="259.08" y="195.58">
+<attribute name="PARTNO" x="259.08" y="195.58" size="1.778" layer="96" rot="R270" display="off"/>
+</instance>
+<instance part="C10" gate="G$1" x="170.18" y="193.04">
+<attribute name="PARTNO" x="170.18" y="193.04" size="1.778" layer="96" rot="R270" display="off"/>
+</instance>
+<instance part="C11" gate="G$1" x="162.56" y="193.04">
+<attribute name="PARTNO" x="162.56" y="193.04" size="1.778" layer="96" rot="R270" display="off"/>
+</instance>
+<instance part="C18" gate="G$1" x="251.46" y="193.04">
+<attribute name="PARTNO" x="251.46" y="193.04" size="1.778" layer="96" rot="R270" display="off"/>
+</instance>
+<instance part="C19" gate="G$1" x="243.84" y="193.04">
+<attribute name="PARTNO" x="243.84" y="193.04" size="1.778" layer="96" rot="R270" display="off"/>
+</instance>
 <instance part="GND3" gate="1" x="154.94" y="187.96" smashed="yes">
 <attribute name="VALUE" x="152.4" y="185.42" size="1.778" layer="96"/>
 </instance>
@@ -11201,33 +11368,49 @@ skagmo.com</text>
 <instance part="GND33" gate="1" x="266.7" y="187.96" smashed="yes">
 <attribute name="VALUE" x="264.16" y="185.42" size="1.778" layer="96"/>
 </instance>
-<instance part="U2" gate="G$1" x="152.4" y="144.78"/>
+<instance part="U2" gate="G$1" x="152.4" y="144.78">
+<attribute name="PARTNO" x="152.4" y="144.78" size="1.778" layer="96" rot="R270" display="off"/>
+</instance>
 <instance part="GND2" gate="1" x="134.62" y="129.54" smashed="yes">
 <attribute name="VALUE" x="132.08" y="127" size="1.778" layer="96"/>
 </instance>
-<instance part="C16" gate="G$1" x="147.32" y="195.58"/>
+<instance part="C16" gate="G$1" x="147.32" y="195.58">
+<attribute name="PARTNO" x="147.32" y="195.58" size="1.778" layer="96" rot="R270" display="off"/>
+</instance>
 <instance part="GND15" gate="1" x="147.32" y="187.96" smashed="yes">
 <attribute name="VALUE" x="144.78" y="185.42" size="1.778" layer="96"/>
 </instance>
 <instance part="GND25" gate="1" x="226.06" y="132.08"/>
-<instance part="S1" gate="S" x="43.18" y="142.24"/>
-<instance part="Q7" gate="G$1" x="48.26" y="195.58"/>
+<instance part="S1" gate="S" x="43.18" y="142.24">
+<attribute name="PARTNO" x="43.18" y="142.24" size="1.778" layer="96" rot="R270" display="off"/>
+</instance>
+<instance part="Q7" gate="G$1" x="48.26" y="195.58">
+<attribute name="PARTNO" x="48.26" y="195.58" size="1.778" layer="96" rot="R270" display="off"/>
+</instance>
 <instance part="P+7" gate="VCC" x="48.26" y="190.5"/>
 <instance part="GND32" gate="1" x="48.26" y="162.56" smashed="yes">
 <attribute name="VALUE" x="48.26" y="160.02" size="1.778" layer="96" rot="R270"/>
 </instance>
 <instance part="P+8" gate="VCC" x="50.8" y="203.2"/>
-<instance part="U7" gate="G$1" x="226.06" y="147.32"/>
+<instance part="U7" gate="G$1" x="226.06" y="147.32">
+<attribute name="PARTNO" x="226.06" y="147.32" size="1.778" layer="96" rot="R270" display="off"/>
+</instance>
 <instance part="GND17" gate="1" x="50.8" y="134.62"/>
-<instance part="H_UART" gate="G$1" x="33.02" y="218.44"/>
-<instance part="RS1" gate="G$1" x="129.54" y="200.66"/>
+<instance part="H_UART" gate="G$1" x="33.02" y="218.44">
+<attribute name="PARTNO" x="33.02" y="218.44" size="1.778" layer="96" rot="R270" display="off"/>
+</instance>
+<instance part="RS1" gate="G$1" x="129.54" y="200.66">
+<attribute name="PARTNO" x="129.54" y="200.66" size="1.778" layer="96" rot="R270" display="off"/>
+</instance>
 <instance part="Q3" gate="G$1" x="284.48" y="139.7" smashed="yes" rot="R270">
 <attribute name="NAME" x="281.94" y="144.78" size="1.778" layer="95"/>
 <attribute name="VALUE" x="284.48" y="134.62" size="1.778" layer="96" rot="R270"/>
+<attribute name="PARTNO" x="284.48" y="139.7" size="1.778" layer="96" rot="R270" display="off"/>
 </instance>
 <instance part="Q4" gate="G$1" x="284.48" y="165.1" smashed="yes" rot="R270">
 <attribute name="NAME" x="281.94" y="170.18" size="1.778" layer="95"/>
 <attribute name="VALUE" x="284.48" y="160.02" size="1.778" layer="96" rot="R270"/>
+<attribute name="PARTNO" x="284.48" y="165.1" size="1.778" layer="96" rot="R270" display="off"/>
 </instance>
 </instances>
 <busses>

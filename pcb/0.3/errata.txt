@@ -1,0 +1,15 @@
+- Consider integrated half-bridge with sleep:
+  BTN8982TAAUMA1 (50A heftig)
+  bq500101 (10A, best) eller CSD97394Q4M (20A, høyere strøm)
+  MPQ8039 (4.5A, SOIC-pakke)
+- Change to I2C current/voltage sensor
+- PIC32, PIC32MX170F256B? SSOP eller QFN
+- Replaceable fuse for battery
+- Low power 3.3 V converter, possibly 54202 or 62175?
+- Remove LCD and button
+- Add ideal diode to prevent back current?
+
+
+Old:
+- Re-add resistors on transistor gates
+

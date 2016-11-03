@@ -21,6 +21,10 @@ void set_print_int(void){
 void set_outputs(void){
 	if ( bat_v > (config.aux1_shdn+config.shdn_hyst) ) AUX1_EN = config.aux1_dstate;
 	if ( bat_v > (config.aux2_shdn+config.shdn_hyst) ) AUX2_EN = config.aux2_dstate;
+	
+	// Disable outputs if low voltage
+	if (AUX1_EN && (bat_v < config.aux1_shdn)) AUX1_EN = 0;
+	if (AUX2_EN && (bat_v < config.aux2_shdn)) AUX2_EN = 0;
 }
 
 void lcd_task(void){
@@ -59,9 +63,7 @@ void ad_task(void){
 	bat_i_in = ad_read(AD_BAT_IN_I) * 2;
 	bat_i_out = ad_read(AD_BAT_OUT_I) * 2;
 	
-	// Disable outputs if low voltage
-	if (AUX1_EN && (bat_v < config.aux1_shdn)) AUX1_EN = 0;
-	if (AUX2_EN && (bat_v < config.aux2_shdn)) AUX2_EN = 0;
+	set_outputs();
 }
 
 void mppt_task(void){

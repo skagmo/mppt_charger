@@ -1,5 +1,19 @@
-- Re-add resistors on transistor gates
-- Add pull-down on transitor gates
-- Move bootstrap-cap closer to chip
+- Consider integrated half-bridge with sleep:
+  BTN8982TAAUMA1 (50A heftig, men kanskje for lav maksfrekvens?)
+  bq500101 (10A, best) eller CSD97394Q4M (20A, høyere strøm)
+  MPQ8039 (4.5A, SOIC-pakke)
+  DRV8872DDAR
+- Change to I2C current/voltage sensor
+- PIC32, PIC32MX170F256B? SSOP eller QFN
 - Replaceable fuse for battery
-- Capacitors on INA139 outputs
+- Low power 3.3 V converter, possibly 54202 or 62175?
+- Remove LCD and button
+- Add ideal diode to prevent back current? Or just FET
+
+
+PIC32MX534F064H for CAN-bus? MPPT og power-kort?
+
+
+Old:
+- Re-add resistors on transistor gates
+

@@ -1,6 +1,11 @@
 - FW: UART ringbuffer spytter ut en bufferstørrelse med 0x00 under oppstart
 - Lodde inn gate-resistorer?
 
+- Bias og gain må kunne justeres på strømmåling
+- Enkelte transistorer med reversdiode vil gjøre at det alltid er spenning på inngang
+
+Elektronikken trekker 10.25 mA
+
 Low-side transistoren må ha en viss duty-cycle for at high-side-transistoren skal fungere!
 Årsaken er at boot-kondensatoren lades opp her gang low-side går aktiv.
 
@@ -17,9 +22,11 @@ $14958,1260,12785,1451,41,113
 
 http://www.daycounter.com/Calculators/Switching-Converter-Calculator.phtml
 
-2 mohm shunt gir 10A maks: 10A * 0.002 * 100k / 1k = 2V
+2 mohm shunt: 10A * 0.002 * 100k / 1k = 2V
+5 mohm shunt: 4A * 0.002 * 100k / 1k = 2V
 
-60V FET DMT6016LSS-13DICT-ND
+60V 9.2A FET DMT6016LSS-13DICT-ND 17nC (10VGS)
+30V 10.9A FET SI4128DY-T1-GE3 8nC (10VGS)
 3.3v 1a reg 945-1661-5-ND
 Mppt spole 541-1289-1-ND
 P-kanal SOT23 til MPPT LCD DMG2305UX-13DICT-ND
